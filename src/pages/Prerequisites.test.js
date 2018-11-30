@@ -3,5 +3,5 @@ import Prerequisites from './Prerequisites';
 
 it('renders title', () => {
   const wrapper = shallow(<Prerequisites />);
-  expect(wrapper.find('AboutHeader').children().text()).toEqual('Prerequisites');
+  expect(wrapper.find('AboutHeader').children().text()).toEqual('Assumptions');
 });

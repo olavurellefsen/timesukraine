@@ -64,7 +64,7 @@ const AboutImage = styled.img`
 
 export default () => (
   <AboutContainer>
-    <AboutHeader>Prerequisites</AboutHeader>
+    <AboutHeader>Assumptions</AboutHeader>
     <AboutHeader2>Forudsætninger kort fortalt</AboutHeader2>
     <AboutBody>
       Her vil vi løbende beskrive de vigtigste forudsætninger anvendt i TIMES-DK modellen til de viste

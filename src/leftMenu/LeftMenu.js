@@ -150,19 +150,16 @@ class ScenarioSelectionMenu extends React.Component {
         <MenuHeader>
           <MenuHeaderLeft>
             <MenuTitle to='/'>
-              Klimaaftalen
+              TIMES Ukraine
             </MenuTitle>
             <MenuRoutes>
-              <MenuItem to='/about' selected={this.props.selectedChartgroup==='/about'}>Om værktøjet</MenuItem>
-              <MenuItem to='/beskrivelser' selected={this.props.selectedChartgroup==='/beskrivelser'}>Beskrivelser af scenarier</MenuItem>
-              <MenuItem to='/anbefalinger' selected={this.props.selectedChartgroup==='/anbefalinger'}>DTU's anbefalinger</MenuItem>
-              <MenuItem to='/forudsaetninger' selected={this.props.selectedChartgroup==='/forudsaetninger'}>Forudsætninger</MenuItem>
-              <MenuItem to='/abonner' selected={this.props.selectedChartgroup==='/abonner'}>Abonnér på opdateringer</MenuItem>
+              <MenuItem to='/about' selected={this.props.selectedChartgroup==='/about'}>About the tool</MenuItem>
+              <MenuItem to='/beskrivelser' selected={this.props.selectedChartgroup==='/beskrivelser'}>Descriptions of scenarios</MenuItem>
+              <MenuItem to='/anbefalinger' selected={this.props.selectedChartgroup==='/anbefalinger'}>Recommendations</MenuItem>
+              <MenuItem to='/forudsaetninger' selected={this.props.selectedChartgroup==='/forudsaetninger'}>Assumptions</MenuItem>
+              <MenuItem to='/abonner' selected={this.props.selectedChartgroup==='/abonner'}>Subscribe to updates</MenuItem>
             </MenuRoutes>
           </MenuHeaderLeft>
-          <MenuHeaderRight>
-            <AppLogo src='./images/dtulogo_white.png' alt='logo'/>
-          </MenuHeaderRight>
         </MenuHeader>
         <MenuSeparatorLine />        
         <ScenarioSelection>
@@ -172,7 +169,7 @@ class ScenarioSelectionMenu extends React.Component {
             selectedValue={this.props.scenarioSelection.scenarioSelection}
             selectedValue2={this.props.scenarioSelection.scenarioSelection2}
             dimensionOptions={this.props.scenarioCombinations.scenarioOptions}
-            dimensionTitle='Scenarier'
+            dimensionTitle='Scenarios'
             narrowVersion={false}
           />
         </ScenarioSelection>
@@ -185,12 +182,12 @@ class ScenarioSelectionMenu extends React.Component {
           <ToggleSwitchText
             singleMode={this.props.scenarioSelection.scenarioSelection2===""}
             selected={this.props.scenarioSelection.showDifference}
-          >Scenarie difference</ToggleSwitchText>
+          >Scenario difference</ToggleSwitchText>
         </ToggleDifference>
         <MenuSeparatorLine />
         <MenuFooter>
           <CopyrightNotice>
-            <ExternalLink href='http://www.tokni.com'>Online version fra Tokni</ExternalLink>
+            <ExternalLink href='http://www.tokni.com'>Online version from Tokni</ExternalLink>
           </CopyrightNotice>
         </MenuFooter>
       </MenuLayout>
@@ -203,6 +200,7 @@ ScenarioSelectionMenu.propTypes = {
   scenarioSelection: PropTypes.object.isRequired,
   scenarioCombinations: PropTypes.object.isRequired,
   toggleDifference: PropTypes.func.isRequired,
+  selectedChartgroup: PropTypes.any
 }
 
 export default ScenarioSelectionMenu;
