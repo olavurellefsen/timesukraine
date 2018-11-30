@@ -10,5 +10,5 @@ phases:
   post_build:
     commands:
       - aws s3 sync build/ s3://timesukraine
-      - aws cloudfront create-invalidation --distribution-id ERZ3N7LF28Q6C --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id EDA8U23KFGQ0O --paths "/*"
   
