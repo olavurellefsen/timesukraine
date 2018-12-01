@@ -51,7 +51,7 @@ const AboutImage = styled.img`
 
 export default () => (
   <AboutContainer>
-    <AboutHeader>Scenariebeskrivelser</AboutHeader>
+    <AboutHeader>Scenario Descriptions</AboutHeader>
     <AboutHeader2>Energiaftelen 2018</AboutHeader2>
     <AboutBody>
       Energiaftelen 2018 scenario er som Energistyrelsens basisfremskrivning. Det
