@@ -37,5 +37,6 @@ export default () => (
   <AboutContainer>
     <AboutHeader>Recommendations</AboutHeader>
     <AboutBody><Link to='/'>To the front page</Link></AboutBody>
+    <AboutHeader2 />
   </AboutContainer>
 )
