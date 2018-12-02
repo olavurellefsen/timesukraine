@@ -13,11 +13,11 @@ import SupplyCharts from './charts/SupplyCharts'
 import About from './pages/About'
 import ScenarioDescriptions from './pages/ScenarioDescriptions'
 import Recommendations from './pages/Recommendations'
-import Prerequisites from './pages/Prerequisites'
+import Assumptions from './pages/Assumptions'
 import GetUpdates from './pages/GetUpdates'
 import scenarioCombinations from './data/scenarioCombinations'
 
-ReactGA.initialize('UA-127032810-1');
+ReactGA.initialize('UA-130272068-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Page = styled.div`
@@ -26,14 +26,20 @@ const Page = styled.div`
     display: flex;
     box-sizing: border-box;
 `
-const Column = styled.div`
+const LeftColumn = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
 `
+const RightColumn = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`
 const Content = styled.div` 
-  flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
-  overflow-y: auto;  /*adds scroll to this container*/
+  flex-grow: 1;
+  overflow-y: auto;
   overflow-x: hidden;
 `
 const MainSwitch = styled(Switch)`
@@ -61,6 +67,7 @@ export class App extends React.Component {
 
   static propTypes = {
     history: PropTypes.object,
+    location: PropTypes.any
   }
 
   UpdateScenarioSelection = (e, name, value) => {
@@ -95,7 +102,7 @@ export class App extends React.Component {
   render() { 
     return (
         <Page>
-          <Column>
+          <LeftColumn>
             <Content>
               <LeftMenu 
                 scenarioSelection={this.state}
@@ -110,8 +117,8 @@ export class App extends React.Component {
                 toggleDifference={this.ToggleDifference}
               />
             </Content>
-          </Column>
-          <Column>
+          </LeftColumn>
+          <RightColumn>
             <Content>
               <Tabs selectedChartgroup={this.props.location.pathname} />
               <TabsMobile selectedChartgroup={this.props.location.pathname} />
@@ -124,18 +131,18 @@ export class App extends React.Component {
                   scenarioSelection={this.state}
                   closeWelcome={this.CloseWelcomeWidget}
                 />}/>
-                <Route path='/forsyning' render={()=><SupplyCharts 
+                <Route path='/supply' render={()=><SupplyCharts 
                   scenarioSelection={this.state}
                   closeWelcome={this.CloseWelcomeWidget}
                 />}/>                
                 <Route path='/about' component={About} />
-                <Route path='/beskrivelser' component={ScenarioDescriptions} />
-                <Route path='/anbefalinger' component={Recommendations} />
-                <Route path='/forudsaetninger' component={Prerequisites} />
-                <Route path='/abonner' component={GetUpdates} />
+                <Route path='/descriptions' component={ScenarioDescriptions} />
+                <Route path='/recommendations' component={Recommendations} />
+                <Route path='/assumptions' component={Assumptions} />
+                <Route path='/subscribe' component={GetUpdates} />
               </MainSwitch>
             </Content>
-          </Column>
+          </RightColumn>
         </Page>
     );
   }

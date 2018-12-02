@@ -51,8 +51,6 @@ const TableHeader = styled.th`
   `  
 const TableData = styled.td`
   padding: 5px;
-  background-color: lightgrey;
-  border-color: white;
   `
 const AboutImage = styled.img`
   max-width: 752px;
@@ -66,5 +64,6 @@ export default () => (
   <AboutContainer>
     <AboutHeader>Assumptions</AboutHeader>
     <AboutBody><Link to='/'>To the front page</Link></AboutBody>
+    <AboutHeader2 /><AboutTable /><TableCaption /><TableHeader /><TableData /><AboutImage />
   </AboutContainer>
 )

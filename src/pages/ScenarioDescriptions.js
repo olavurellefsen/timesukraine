@@ -53,5 +53,6 @@ export default () => (
   <AboutContainer>
     <AboutHeader>Scenario Descriptions</AboutHeader>
     <AboutBody><Link to='/'>To the front page</Link></AboutBody>
+    <AboutHeader2 /><AboutList /><AboutImage />
   </AboutContainer>
 )

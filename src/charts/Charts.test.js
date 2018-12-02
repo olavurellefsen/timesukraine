@@ -6,7 +6,7 @@ it('renders the main area', () => {
     scenarioSelection: "DTU_Regeringen",
     scenarioSelection2: "",
     showWelcome: true,
-    showDifference: false
+    showDifference: false,
   };
   const wrapper = shallow(<Charts closeWelcome={() => (false)} scenarioSelection={scenarioSelection} />);
   expect(wrapper.find('MainArea')).toHaveLength(1);
