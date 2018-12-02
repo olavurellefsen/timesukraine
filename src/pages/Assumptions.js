@@ -27,21 +27,32 @@ const AboutHeader2 = styled.h2`
   font-weight: bold;
   `
 const AboutBody = styled.p`
-  padding: 10px 0px 0px 0px;
-  margin: 0px;
+  margin-bottom: 5px;
   font-size: 1em;
   ${breakpoint('mobile','desktop')`
     font-size: 0.7em;
   `}  
   `
-const AboutList = styled.ul`
-  font-size: 1em;
+const AboutTable = styled.table`
+  max-width: 752px;
   ${breakpoint('mobile','desktop')`
+    max-width: 275px;
     font-size: 0.7em;
   `}  
+  `
+const TableCaption = styled.caption`
+  margin-top: 20px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-style: italic;
+  `
+const TableHeader = styled.th`
+    text-align: left;
+  `  
+const TableData = styled.td`
+  padding: 5px;
   `
 const AboutImage = styled.img`
-  padding: 20px 0px;
   max-width: 752px;
   ${breakpoint('mobile','desktop')`
     max-width: 250px;
@@ -51,8 +62,8 @@ const AboutImage = styled.img`
 
 export default () => (
   <AboutContainer>
-    <AboutHeader>Scenario Descriptions</AboutHeader>
+    <AboutHeader>Assumptions</AboutHeader>
     <AboutBody><Link to='/'>To the front page</Link></AboutBody>
-    <AboutHeader2 /><AboutList /><AboutImage />
+    <AboutHeader2 /><AboutTable /><TableCaption /><TableHeader /><TableData /><AboutImage />
   </AboutContainer>
 )

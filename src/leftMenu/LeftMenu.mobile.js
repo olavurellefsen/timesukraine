@@ -20,20 +20,15 @@ const MenuLayout = styled.div`
   `}
   `;
   MenuLayout.displayName = 'MenuLayout';
-const AppLogo  = styled.img`
-  width: 45px;
-  height: 67px;
-  margin: 5px;
-  border: 0;
-  `;
-  AppLogo.displayName = 'AppLogo';
-const MenuHeader =  styled.div`
+const MenuHeader =  styled(Link)`
   padding: 5px;
   margin: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: top;
+  text-decoration: none;
+  color:white;
   `;
   MenuHeader.displayName = 'MenuHeader';
 const MenuSeparatorLine  = styled.hr`
@@ -119,16 +114,16 @@ class ScenarioSelectionMenu extends React.Component {
   render() {
     return (
       <MenuLayout>
-        <MenuHeader>
-          <AppLogo src='./images/dtulogo_white.png' alt='logo'/>
-          <MenuRoutes>
-            <MenuItem to='/about' selected={this.props.selectedChartgroup==='/about'}>Om</MenuItem>
-            <MenuItem to='/beskrivelser' selected={this.props.selectedChartgroup==='/beskrivelser'}>Beskrivelse</MenuItem>
-            <MenuItem to='/anbefalinger' selected={this.props.selectedChartgroup==='/anbefalinger'}>Anbefalinger</MenuItem>
-            <MenuItem to='/forudsaetninger' selected={this.props.selectedChartgroup==='/forudsaetninger'}>Forudsætn.</MenuItem>
-            <MenuItem to='/abonner' selected={this.props.selectedChartgroup==='/abonner'}>Abonnér</MenuItem>
-          </MenuRoutes>
+        <MenuHeader to='/'>
+          Times Ukraine
         </MenuHeader>
+        <MenuRoutes>
+          <MenuItem to='/about'>About</MenuItem>
+          <MenuItem to='/descriptions'>Descriptions</MenuItem>
+          <MenuItem to='/recommendations'>Recommend.</MenuItem>
+          <MenuItem to='/assumptions'>Assumptions</MenuItem>
+          <MenuItem to='/subscribe'>Subscribe</MenuItem>
+        </MenuRoutes>
         <MenuSeparatorLine />        
         <ScenarioSelection>
           <ScenarioSelectionList
@@ -137,7 +132,7 @@ class ScenarioSelectionMenu extends React.Component {
             selectedValue={this.props.scenarioSelection.scenarioSelection}
             selectedValue2={this.props.scenarioSelection.scenarioSelection2}
             dimensionOptions={this.props.scenarioCombinations.scenarioOptions}
-            dimensionTitle='Scenarier'
+            dimensionTitle='Scenarios'
             narrowVersion={true}
           />
         </ScenarioSelection>
@@ -150,7 +145,7 @@ class ScenarioSelectionMenu extends React.Component {
           <ToggleSwitchText
             singleMode={this.props.scenarioSelection.scenarioSelection2===""}
             selected={this.props.scenarioSelection.showDifference}
-          >Scenarie difference</ToggleSwitchText>
+          >Scenario difference</ToggleSwitchText>
         </ToggleDifference>
         <MenuSeparatorLine />        
         <MenuFooter>

@@ -26,17 +26,10 @@ const AboutBody = styled.p`
     font-size: 0.7em;
   `}  
   `
-const BodyLink = styled.a`
-  color: inherit;
-  text-decoration: underline;
-  `
 
 export default () => (
   <AboutContainer>
-    <AboutHeader>Abonnér på opdateringer</AboutHeader>
-    <AboutBody>
-      Follow os on Twitter <BodyLink href='https://twitter.com/timesukraine'>@timesukraine</BodyLink> to get notification of new data, new scenarios or other changes.
-    </AboutBody>
-    <AboutBody><Link to='/'>Back to the front page</Link></AboutBody>
+	<AboutHeader>Subscribe to updates</AboutHeader>
+    <AboutBody><Link to='/'>To the front page</Link></AboutBody>
   </AboutContainer>
 )
