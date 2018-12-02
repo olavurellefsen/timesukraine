@@ -36,10 +36,10 @@ const Charts = (props) => {
         }
         {(props.scenarioSelection.showDifference===true && selectedScenario2!=="") && 
           <Flex>
-            <StackedBarChart chartName='webT_All Electricity NEW Capaci' chartTitle='webT_All Electricity NEW Capaci' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
-            <StackedBarChart chartName='webT_All Electricity Capacity D' chartTitle='webT_All Electricity Capacity D' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
-            <StackedBarChart chartName='webT_All Electricity Production' chartTitle='webT_All Electricity Production' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={400} />
-            <StackedBarChart chartName='webT_CO2-eq Emissions by Sector' chartTitle='webT_CO2-eq Emissions by Sector' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="kt" minY={0} maxY={400} />
+            <StackedBarDiffChart chartName='webT_All Electricity NEW Capaci' chartTitle='webT_All Electricity NEW Capaci' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
+            <StackedBarDiffChart chartName='webT_All Electricity Capacity D' chartTitle='webT_All Electricity Capacity D' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
+            <StackedBarDiffChart chartName='webT_All Electricity Production' chartTitle='webT_All Electricity Production' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={400} />
+            <StackedBarDiffChart chartName='webT_CO2-eq Emissions by Sector' chartTitle='webT_CO2-eq Emissions by Sector' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="kt" minY={0} maxY={400} />
           </Flex>
         }        
     </MainArea>
