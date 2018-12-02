@@ -2,8 +2,8 @@ import React from 'react';
 import StackedBarChart from './StackedBarChart';
 
 it('renders the chart title', () => {
-  const selectedScenario = "DTU_ea18_fp";
-  const chartName = "_Biobrændsels forbrug";
+  const selectedScenario = "UDEC_BAU2050_01";
+  const chartName = "web_All Electricity Capacity D";
   const chartTitle = "Dummy Title";
   const combinedChart = false;
   const minY = 0;
