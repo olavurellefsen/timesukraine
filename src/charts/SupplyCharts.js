@@ -28,30 +28,18 @@ const Charts = (props) => {
       {(props.scenarioSelection.showWelcome===true) && <Welcome closeWelcome={props.closeWelcome} />}
         {(props.scenarioSelection.showDifference===false || (props.scenarioSelection.showDifference===true && selectedScenario2==="")) && 
           <Flex>
-            <StackedBarChart chartName='_SUP_Energi forbrug i Danmark' chartTitle='Danmarks samlede energiforbrug' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={1000} />
-            <StackedBarChart chartName='_SUP_Olie og gas produktion' chartTitle='Olie og gas produktionen' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={500} />
-            <StackedBarChart chartName='_SUP_Biobrændsels forbrug' chartTitle='Biobrændselsforbruget' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={500} />
-            <StackedBarChart chartName='_SUP_Import_eksport biobrændsler' chartTitle='Import/eksport biomasse og biobrændsler' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={-40} maxY={220} />
-            <StackedBarChart chartName='_SUP_Forbrug VE raffinaderier' chartTitle='Brændselsforbrug på VE raffinaderier' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={300} />
-            <StackedBarChart chartName='_SUP_Bio-raffinaderi output' chartTitle='Bio-raffinaderi output' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={200} />
-            <StackedBarChart chartName='_SUP_El og varme sektorens brændse' chartTitle='El og varmesektorens brændselsforbrug' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={500} />
-            <StackedBarChart chartName='_SUP_Transport sektorens energifor' chartTitle='Transportsektorens energiforbrug' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={300} />
-            <StackedBarChart chartName='_SUP_Industriens energiforbrug' chartTitle='Industriens energiforbrug' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={500} />
-            <StackedBarChart chartName='_SUP_Husholdningers varmeforbrug' chartTitle='Husholdningernes energiforbrug' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={180} />
+            <StackedBarChart chartName='webS_All Electricity NEW Capaci' chartTitle='webS_All Electricity NEW Capaci' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
+            <StackedBarChart chartName='webS_All Electricity Capacity D' chartTitle='webS_All Electricity Capacity D' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
+            <StackedBarChart chartName='webS_All Electricity Production' chartTitle='webS_All Electricity Production' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={400} />
+            <StackedBarChart chartName='webS_CO2-eq Emissions by Sector' chartTitle='webS_CO2-eq Emissions by Sector' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="kt" minY={0} maxY={400} />    
           </Flex>
         }
         {(props.scenarioSelection.showDifference===true && selectedScenario2!=="") && 
           <Flex>
-            <StackedBarDiffChart chartName='_SUP_Energi forbrug i Danmark' chartTitle='Danmarks samlede energiforbrug' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={-200} maxY={200} />
-            <StackedBarDiffChart chartName='_SUP_Olie og gas produktion' chartTitle='Olie og gas produktionen' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={-100} maxY={100} />
-            <StackedBarDiffChart chartName='_SUP_Biobrændsels forbrug' chartTitle='Biobrændselsforbruget' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={-100} maxY={100} />
-            <StackedBarDiffChart chartName='_SUP_Import_eksport biobrændsler' chartTitle='Import/eksport biomasse og biobrændsler' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={-100} maxY={100} />
-            <StackedBarDiffChart chartName='_SUP_Forbrug VE raffinaderier' chartTitle='Brændselsforbrug på VE raffinaderier' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" label2="Netto eksport (PJ)" minY={-200} maxY={200} />
-            <StackedBarDiffChart chartName='_SUP_Bio-raffinaderi output' chartTitle='Bio-raffinaderi output' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={-100} maxY={100} />
-            <StackedBarDiffChart chartName='_SUP_El og varme sektorens brændse' chartTitle='El og varmesektorens brændselsforbrug' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={-200} maxY={200} />
-            <StackedBarDiffChart chartName='_SUP_Transport sektorens energifor' chartTitle='Transportsektorens energiforbrug' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={-100} maxY={100} />
-            <StackedBarDiffChart chartName='_SUP_Industriens energiforbrug' chartTitle='Industriens energiforbrug' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={-100} maxY={100} />
-            <StackedBarDiffChart chartName='_SUP_Husholdningers varmeforbrug' chartTitle='Husholdningernes energiforbrug' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={-10} maxY={10} />
+            <StackedBarDiffChart chartName='webS_All Electricity NEW Capaci' chartTitle='webS_All Electricity NEW Capaci' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
+            <StackedBarDiffChart chartName='webS_All Electricity Capacity D' chartTitle='webS_All Electricity Capacity D' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
+            <StackedBarDiffChart chartName='webS_All Electricity Production' chartTitle='webS_All Electricity Production' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={400} />
+            <StackedBarDiffChart chartName='webS_CO2-eq Emissions by Sector' chartTitle='webS_CO2-eq Emissions by Sector' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="kt" minY={0} maxY={400} />
           </Flex>
         }        
     </MainArea>

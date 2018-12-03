@@ -2,9 +2,9 @@ import React from 'react';
 import StackedBarDiffChart from './StackedBarDiffChart';
 
 it('renders the chart title', () => {
-  const selectedScenario = "DTU_Regeringen";
-  const selectedScenario2 = "DTU_Fossilfri_2050";
-  const chartName = "_CO2 emissioner";
+  const selectedScenario = "UDEC_BAU2050_01";
+  const selectedScenario2 = "UDEC_BAU2050_ILED_01";
+  const chartName = "web_CO2-eq Emissions by Sector";
   const chartTitle = "Dummy Title";
   const combinedChart = false;
   const minY = 0;
