@@ -10,6 +10,13 @@
     "scenario-difference": "Scenario difference",
     "online-version-from-tokni": "Online version from Tokni"
   },
+  "mobile-menu": {
+    "about": "About",
+    "descriptions": "Descriptions",
+    "recommend": "Recommend.",
+    "assumptions": "Assumptions",
+    "subscribe": "Subscribe"
+  },
   "tabs": {
     "main-results": "Main results",
     "transport-sector": "Transport sector",

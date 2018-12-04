@@ -10,6 +10,13 @@
     "scenario-difference": "Різниця",
     "online-version-from-tokni": "Онлайн версія від Tokni"
   },
+  "mobile-menu": {
+    "about": "Про",
+    "descriptions": "Описи",
+    "recommend": "Рекомендації",
+    "assumptions": "Припущення",
+    "subscribe": "Підписатися"
+  },  
   "tabs": {
     "main-results": "Основні результати",
     "transport-sector": "Транспорт",
