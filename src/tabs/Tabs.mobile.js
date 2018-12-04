@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 import { Link } from 'react-router-dom'
+import { Trans } from 'react-i18next';
 
 const TabLayout = styled.div`
   display: none;
@@ -45,9 +46,9 @@ class Tabs extends React.Component {
   render() {
     return (
       <TabLayout>
-          <TabItem to='/' selected={this.props.selectedChartgroup==='/'}>Main</TabItem>
-          <TabItem to='/transport' selected={this.props.selectedChartgroup==='/transport'}>Transport</TabItem>
-          <TabItem to='/supply' selected={this.props.selectedChartgroup==='/supply'}>Supply</TabItem>
+          <TabItem to='/' selected={this.props.selectedChartgroup==='/'}><Trans i18nKey='tabs.main-results' /></TabItem>
+          <TabItem to='/transport' selected={this.props.selectedChartgroup==='/transport'}><Trans i18nKey='tabs.transport-sector' /></TabItem>
+          <TabItem to='/supply' selected={this.props.selectedChartgroup==='/supply'}><Trans i18nKey='tabs.supply-sector' /></TabItem>
       </TabLayout>
     );
   }

@@ -28,6 +28,7 @@ const MenuHeader =  styled.div`
   display: flex;
   flex-direction: row;
   align-items: top;
+  justify-content: space-between;
   `;
   MenuLayout.displayName = 'MenuLayout';
 const MenuHeaderLeft = styled.div`
@@ -36,7 +37,6 @@ const MenuHeaderLeft = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: left;
   `;
   MenuHeaderLeft.displayName = 'MenuHeaderLeft';
 const MenuHeaderRight = styled.div`
@@ -45,7 +45,7 @@ const MenuHeaderRight = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: right;
+  align-items: flex-end;
   `;
   MenuHeaderRight.displayName = 'MenuHeaderRight';
 const AppLogo  = styled.img`
@@ -96,7 +96,7 @@ const MenuRoutes  = styled.div`
   MenuRoutes.displayName = 'MenuRoutes';
 const MenuItem  = styled(Link)`
   font-weight: ${props => (props.selected ? 'bold' : 'normal')};
-  font-size: 1em;
+  font-size: 0.9em;
   margin: 0;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -177,6 +177,9 @@ class ScenarioSelectionMenu extends React.Component {
               <MenuItem to='/subscribe' selected={this.props.selectedChartgroup==='/subscribe'}><Trans i18nKey='main-menu.subscribe-to-updates' /></MenuItem>              
             </MenuRoutes>
           </MenuHeaderLeft>
+          <MenuHeaderRight>
+            <AppLogo src='./images/dtulogo_white.png' alt='logo'/>
+          </MenuHeaderRight>
         </MenuHeader>
         <MenuSeparatorLine />        
         <ScenarioSelection>
