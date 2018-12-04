@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import breakpoint from 'styled-components-breakpoint';
+import { Trans } from 'react-i18next';
 
 const AboutContainer = styled.div`
   padding: 0px 20px 20px 20px;
@@ -34,8 +35,8 @@ const AboutBody = styled.p`
   `
 export default () => (
   <AboutContainer>
-    <AboutHeader>About the tool</AboutHeader>
-    <AboutBody><Link to='/'>To the front page</Link></AboutBody>
+    <AboutHeader><Trans i18nKey='main-menu.about-the-tool' /></AboutHeader>
+    <AboutBody><Link to='/'><Trans i18nKey='pages.to-the-front-page' /></Link></AboutBody>
     <AboutHeader2></AboutHeader2>
   </AboutContainer>
 )

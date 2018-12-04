@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Octicon from 'react-octicon'
+import { Trans  } from 'react-i18next';
 
 const AlertContainer = styled.div`
   padding: 10px;
@@ -43,8 +44,7 @@ const Welcome = (props) => (
   <AlertContainer>
     <AlertBody>
       <AlertBodyParagraph>
-        With this tool you can explore a number of scenarios related to the TIMES Ukraine energy model.
-        Select a scenario in the left hand menu and review the results in the charts below.
+        <Trans i18nKey='welcome-text.welcome' />
       </AlertBodyParagraph>
     </AlertBody>
     <CloseWindowIcon onClick={(event) => props.closeWelcome(event, 'showWelcome', false)}>
