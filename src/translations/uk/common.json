@@ -23,7 +23,8 @@
     "supply-sector": "Постачання енергоресурсів"
   },
   "welcome-text": {
-    "welcome": "За допомогою цього інструменту ви можете ознайомитися з попередніми результатами сценаріїв розрахованих за допомогою енергетичної моделі TIMES-Україна. Виберіть сценарій у меню ліворуч та перегляньте результати на діаграмах, наведених нижче."
+    "welcome": "За допомогою цього інструменту ви можете ознайомитися з попередніми результатами сценаріїв розрахованих за допомогою енергетичної моделі TIMES-Україна. Виберіть сценарій у меню ліворуч та перегляньте результати на діаграмах, наведених нижче.",
+    "disclaimer": "The information and results hereby represented are work-in-progress results of “Long-Term Energy Modelling and Forecasting in Ukraine: Scenarios for the Action Plan of Energy Strategy of Ukraine until 2035”, joint project by the MoECI of Ukraine, UDEC and the Danish Energy Agency. The data and results are preliminary, and should not be cited or distributed."
   },
   "pages": {
     "to-the-front-page": "На першу сторінку"

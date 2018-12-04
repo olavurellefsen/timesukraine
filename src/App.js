@@ -61,6 +61,7 @@ export class App extends React.Component {
       scenarioSelection: "UDEC_BAU2050_01",
       scenarioSelection2: "",
       showWelcome: true,
+      showDisclaimer: true,
       showDifference: false
     }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
@@ -93,8 +94,8 @@ export class App extends React.Component {
     }
   }
 
-  CloseWelcomeWidget = () => {
-    this.setState({showWelcome: false});
+  CloseWelcomeWidget = (event, variable, value) => {
+    this.setState({[variable]: value});
   }
 
   ToggleDifference = (e) => {

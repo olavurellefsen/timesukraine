@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Welcome from '../alert/Welcome'
+import Disclaimer from '../alert/Disclaimer'
 import StackedBarChart from './StackedBarChart'
 import StackedBarDiffChart from './StackedBarDiffChart'
 
@@ -25,6 +26,7 @@ const Charts = (props) => {
   return(
     <MainArea>
       {(props.scenarioSelection.showWelcome===true) && <Welcome closeWelcome={props.closeWelcome} />}
+      {(props.scenarioSelection.showDisclaimer===true) && <Disclaimer closeWelcome={props.closeWelcome} />}
         {(props.scenarioSelection.showDifference===false || (props.scenarioSelection.showDifference===true && selectedScenario2==="")) && 
           <Flex>
             <StackedBarChart chartName='web_All Electricity NEW Capaci' chartTitle='web_All Electricity NEW Capaci' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
