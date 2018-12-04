@@ -16,6 +16,7 @@ import Recommendations from './pages/Recommendations'
 import Assumptions from './pages/Assumptions'
 import GetUpdates from './pages/GetUpdates'
 import scenarioCombinations from './data/scenarioCombinations'
+import { translate } from 'react-i18next';
 
 ReactGA.initialize('UA-130272068-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -67,7 +68,9 @@ export class App extends React.Component {
 
   static propTypes = {
     history: PropTypes.object,
-    location: PropTypes.any
+    location: PropTypes.any,
+    t: PropTypes.any,
+    i18n: PropTypes.any
   }
 
   UpdateScenarioSelection = (e, name, value) => {
@@ -99,7 +102,7 @@ export class App extends React.Component {
     this.setState({showDifference: !this.state.showDifference});
   }
 
-  render() { 
+  render() {
     return (
         <Page>
           <LeftColumn>
@@ -148,4 +151,4 @@ export class App extends React.Component {
   }
 }
 
-export default withRouter(App)
+export default withRouter(translate('common')(App));

@@ -1,0 +1,24 @@
+{
+  "main-menu": {
+    "times-ukraine": "ТИMEC Україна",
+    "about-the-tool": "Про інструмент",
+    "scenario-descriptions": "Опис сценарію",
+    "recommendations": "Рекомендації",
+    "assumptions": "припущення",
+    "subscribe-to-updates": "Підпишіться на оновлення",
+    "scenarios": "Сценарії",
+    "scenario-difference": "Сценарна різниця",
+    "online-version-from-tokni": "Онлайн версія від Tokni"
+  },
+  "tabs": {
+    "main-results": "Основні результати",
+    "transport-sector": "Транспортний сектор",
+    "supply-sector": "Сектор поставок"
+  },
+  "welcome-text": {
+    "welcome": "За допомогою цього інструменту ви можете вивчити ряд сценаріїв, пов'язаних з енергетичною моделлю ТИMEC Україна. Виберіть сценарій у меню ліворуч та перегляньте результати на діаграмах, наведених нижче."
+  },
+  "pages": {
+    "to-the-front-page": "На першу сторінку"
+  }
+}

@@ -5,6 +5,7 @@ import breakpoint from 'styled-components-breakpoint'
 import { Link } from 'react-router-dom'
 import ScenarioSelectionList from '../scenarioSelection/ScenarioSelectionList'
 import ToggleSwitch from './ToggleSwitch'
+import { Trans, translate } from 'react-i18next';
 
 const MenuLayout = styled.div`
   display: none;
@@ -66,6 +67,17 @@ const MenuTitle  = styled(Link)`
   text-decoration: none;
   `;
   MenuTitle.displayName = 'MenuTitle';
+const LanguageGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  margin-top: 20px;
+  `;
+  LanguageGroup.displayName = 'LanguageGroup';
+const LanguageButton = styled.button`
+  margin-right: 5px;
+  `; 
+  LanguageButton.displayName='LanguageButton';
 const MenuSeparatorLine  = styled.hr`
   margin: 0.25em 12px 0.25em 15px;
   border-color: #555;
@@ -145,19 +157,24 @@ const ExternalLink = styled.a`
 class ScenarioSelectionMenu extends React.Component {
 
   render() {
+    const { i18n } = this.props;
     return (
       <MenuLayout>
         <MenuHeader>
           <MenuHeaderLeft>
             <MenuTitle to='/'>
-              TIMES Ukraine
+            <Trans i18nKey='main-menu.times-ukraine' />
             </MenuTitle>
+            <LanguageGroup>
+              <LanguageButton onClick={() => i18n.changeLanguage('uk')}>UK</LanguageButton>
+              <LanguageButton onClick={() => i18n.changeLanguage('en')}>EN</LanguageButton>
+            </LanguageGroup>
             <MenuRoutes>
-              <MenuItem to='/about' selected={this.props.selectedChartgroup==='/about'}>About the tool</MenuItem>
-              <MenuItem to='/descriptions' selected={this.props.selectedChartgroup==='/descriptions'}>Scenario Descriptions</MenuItem>
-              <MenuItem to='/recommendations' selected={this.props.selectedChartgroup==='/recommendations'}>Recommendations</MenuItem>
-              <MenuItem to='/assumptions' selected={this.props.selectedChartgroup==='/assumptions'}>Assumptions</MenuItem>
-              <MenuItem to='/subscribe' selected={this.props.selectedChartgroup==='/subscribe'}>Subscribe to updates</MenuItem>              
+              <MenuItem to='/about' selected={this.props.selectedChartgroup==='/about'}><Trans i18nKey='main-menu.about-the-tool' /></MenuItem>
+              <MenuItem to='/descriptions' selected={this.props.selectedChartgroup==='/descriptions'}><Trans i18nKey='main-menu.scenario-descriptions' /></MenuItem>
+              <MenuItem to='/recommendations' selected={this.props.selectedChartgroup==='/recommendations'}><Trans i18nKey='main-menu.recommendations' /></MenuItem>
+              <MenuItem to='/assumptions' selected={this.props.selectedChartgroup==='/assumptions'}><Trans i18nKey='main-menu.assumptions' /></MenuItem>
+              <MenuItem to='/subscribe' selected={this.props.selectedChartgroup==='/subscribe'}><Trans i18nKey='main-menu.subscribe-to-updates' /></MenuItem>              
             </MenuRoutes>
           </MenuHeaderLeft>
         </MenuHeader>
@@ -169,7 +186,7 @@ class ScenarioSelectionMenu extends React.Component {
             selectedValue={this.props.scenarioSelection.scenarioSelection}
             selectedValue2={this.props.scenarioSelection.scenarioSelection2}
             dimensionOptions={this.props.scenarioCombinations.scenarioOptions}
-            dimensionTitle='Scenarios'
+            dimensionTitle={this.props.t('main-menu.scenarios', { framework: "react-i18next" })}
             narrowVersion={false}
           />
         </ScenarioSelection>
@@ -182,12 +199,12 @@ class ScenarioSelectionMenu extends React.Component {
           <ToggleSwitchText
             singleMode={this.props.scenarioSelection.scenarioSelection2===""}
             selected={this.props.scenarioSelection.showDifference}
-          >Scenario difference</ToggleSwitchText>
+          ><Trans i18nKey='main-menu.scenario-difference' /></ToggleSwitchText>
         </ToggleDifference>
         <MenuSeparatorLine />
         <MenuFooter>
           <CopyrightNotice>
-            <ExternalLink href='http://www.tokni.com'>Online version from Tokni</ExternalLink>
+            <ExternalLink href='http://www.tokni.com'><Trans i18nKey='main-menu.online-version-from-tokni' /></ExternalLink>
           </CopyrightNotice>
         </MenuFooter>
       </MenuLayout>
@@ -200,7 +217,9 @@ ScenarioSelectionMenu.propTypes = {
   scenarioSelection: PropTypes.object.isRequired,
   scenarioCombinations: PropTypes.object.isRequired,
   toggleDifference: PropTypes.func.isRequired,
-  selectedChartgroup: PropTypes.any
+  selectedChartgroup: PropTypes.any,
+  i18n: PropTypes.any,
+  t: PropTypes.any
 }
 
-export default ScenarioSelectionMenu;
+export default translate('common')(ScenarioSelectionMenu);
