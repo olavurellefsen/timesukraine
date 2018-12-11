@@ -28,18 +28,20 @@ const Charts = (props) => {
       {(props.scenarioSelection.showWelcome===true) && <Welcome closeWelcome={props.closeWelcome} />}
         {(props.scenarioSelection.showDifference===false || (props.scenarioSelection.showDifference===true && selectedScenario2==="")) && 
           <Flex>
-            <StackedBarChart chartName='webS_All Electricity NEW Capaci' chartTitle='webS_All Electricity NEW Capaci' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
-            <StackedBarChart chartName='webS_All Electricity Capacity D' chartTitle='webS_All Electricity Capacity D' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
-            <StackedBarChart chartName='webS_All Electricity Production' chartTitle='webS_All Electricity Production' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={400} />
-            <StackedBarChart chartName='webS_CO2-eq Emissions by Sector' chartTitle='webS_CO2-eq Emissions by Sector' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="kt" minY={0} maxY={400} />    
+			<StackedBarChart chartName='web_CO2-eq Emissions by Sector' chartTitle='CO2-eq Emissions' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Mt' minY={'0'} maxY={'350'} />
+			<StackedBarChart chartName='web_Expenditures - Fuel Costs' chartTitle='Fuel Costs' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='M Euro' minY={'0'} maxY={'13000'} />
+			<StackedBarChart chartName='web_Expenditures - INV' chartTitle='Investment costs' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='M Euro' minY={'0'} maxY={'60000'} />
+			<StackedBarChart chartName='web_Expenditures - O&M' chartTitle='O&M costs' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='M Euro' minY={'0'} maxY={'40000'} />
+			<StackedBarChart chartName='web_fuel import' chartTitle='Fuel import' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={'0'} maxY={'60000'} />
           </Flex>
         }
         {(props.scenarioSelection.showDifference===true && selectedScenario2!=="") && 
           <Flex>
-            <StackedBarDiffChart chartName='webS_All Electricity NEW Capaci' chartTitle='webS_All Electricity NEW Capaci' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
-            <StackedBarDiffChart chartName='webS_All Electricity Capacity D' chartTitle='webS_All Electricity Capacity D' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="MW" minY={0} maxY={400} />
-            <StackedBarDiffChart chartName='webS_All Electricity Production' chartTitle='webS_All Electricity Production' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="PJ" minY={0} maxY={400} />
-            <StackedBarDiffChart chartName='webS_CO2-eq Emissions by Sector' chartTitle='webS_CO2-eq Emissions by Sector' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label="kt" minY={0} maxY={400} />
+            <StackedBarDiffChart chartName='web_CO2-eq Emissions by Sector' chartTitle='CO2-eq Emissions' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Mt' minY={'0'} maxY={'105'} />
+			<StackedBarDiffChart chartName='web_Expenditures - Fuel Costs' chartTitle='Fuel Costs' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='M Euro' minY={'0'} maxY={'3900'} />
+			<StackedBarDiffChart chartName='web_Expenditures - INV' chartTitle='Investment costs' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='M Euro' minY={'0'} maxY={'18000'} />
+			<StackedBarDiffChart chartName='web_Expenditures - O&M' chartTitle='O&M costs' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='M Euro' minY={'0'} maxY={'12000'} />
+			<StackedBarDiffChart chartName='web_fuel import' chartTitle='Fuel import' selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={'0'} maxY={'18000'} />
           </Flex>
         }        
     </MainArea>

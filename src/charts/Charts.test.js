@@ -3,7 +3,7 @@ import Charts from './Charts';
 
 it('renders the main area', () => {
   const scenarioSelection = {
-    scenarioSelection: "UDEC_BAU2050_01",
+    scenarioSelection: "UDEC_S_PAETT0N_00000_00-v01",
     scenarioSelection2: "",
     showWelcome: true,
     showDifference: false,
