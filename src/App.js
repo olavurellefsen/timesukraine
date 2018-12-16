@@ -131,11 +131,11 @@ export class App extends React.Component {
                   scenarioSelection={this.state}
                   closeWelcome={this.CloseWelcomeWidget}
                 />}/>
-                <Route path='/transport' render={()=><TransportCharts 
+                <Route path='/tab2' render={()=><TransportCharts 
                   scenarioSelection={this.state}
                   closeWelcome={this.CloseWelcomeWidget}
                 />}/>
-                <Route path='/supply' render={()=><SupplyCharts 
+                <Route path='/tab3' render={()=><SupplyCharts 
                   scenarioSelection={this.state}
                   closeWelcome={this.CloseWelcomeWidget}
                 />}/>                
