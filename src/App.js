@@ -16,7 +16,7 @@ import Recommendations from './pages/Recommendations'
 import Assumptions from './pages/Assumptions'
 import GetUpdates from './pages/GetUpdates'
 import scenarioCombinations from './data/scenarioCombinations'
-import { translate } from 'react-i18next';
+import { withNamespaces } from 'react-i18next';
 
 ReactGA.initialize('UA-130272068-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -152,4 +152,4 @@ export class App extends React.Component {
   }
 }
 
-export default withRouter(translate('common')(App));
+export default withRouter(withNamespaces('common')(App));

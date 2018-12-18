@@ -5,7 +5,7 @@ import breakpoint from 'styled-components-breakpoint'
 import { Link } from 'react-router-dom'
 import ScenarioSelectionList from '../scenarioSelection/ScenarioSelectionList'
 import ToggleSwitch from './ToggleSwitch'
-import { Trans, translate } from 'react-i18next';
+import { Trans, withNamespaces } from 'react-i18next';
 
 const MenuLayout = styled.div`
   display: none;
@@ -225,4 +225,4 @@ ScenarioSelectionMenu.propTypes = {
   t: PropTypes.any
 }
 
-export default translate('common')(ScenarioSelectionMenu);
+export default withNamespaces('common')(ScenarioSelectionMenu);
