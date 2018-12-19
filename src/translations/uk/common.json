@@ -1,4 +1,5 @@
 {
+  "roynd": "ROYND",
   "main-menu": {
     "times-ukraine": "TIMES-Україна",
     "about-the-tool": "Про інструмент",
@@ -20,7 +21,9 @@
   "tabs": {
     "main-results": "Основні результати",
     "transport-sector": "Кінцеве споживання",
-    "supply-sector": "Інші результати"
+    "supply-sector": "Інші результати",
+    "tab4": "Tab4",
+    "tab5": "Tab5"
   },
   "welcome-text": {
     "welcome": "За допомогою цього інструменту ви можете ознайомитися з попередніми результатами сценаріїв розрахованих за допомогою енергетичної моделі TIMES-Україна. Виберіть сценарій у меню ліворуч та перегляньте результати на діаграмах, наведених нижче.",
@@ -28,5 +31,25 @@
   },
   "pages": {
     "to-the-front-page": "На першу сторінку"
+  },
+  "chart-titles": {
+    "all-electric-capacity": "All Electric Capacity",
+    "new-capacity": "New Capacity",
+    "electric-production-incl-import": "Electric Production (incl. import)",
+    "heat-production": "Heat Production",
+    "electricity-from-renewables": "Electricity from Renewables",
+    "final-energy-to-AGR": "Final Energy to AGR",
+    "final-energy-to-COM": "Final Energy to COM",
+    "final-energy-to-IND": "Final Energy to IND",
+    "final-energy-to-RES": "Final Energy to RES",
+    "final-energy-to-TRN": "Final Energy to TRN",
+    "CO2-EQ-emissions": "CO2_EQ Emissions",
+    "fuel-costs": "Fuel Costs",
+    "investment-costs": "Investment costs",
+    "OandM-costs": "O&M costs",
+    "fuel-import": "Fuel import"
+  },
+  "legend": {
+    "Biomass-fired power plants": "TRANSLATE ME"
   }
 }

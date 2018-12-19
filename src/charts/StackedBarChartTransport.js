@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { VictoryChart, VictoryLabel, VictoryLegend, VictoryGroup, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar, VictoryLine, VictoryTooltip } from 'victory';
 import stackedBar from '../data/transport';
 import line from '../data/line';
+import { NamespacesConsumer } from 'react-i18next';
 
 const ChartHeader = styled(VictoryLabel) `
   text-anchor: start;
@@ -62,7 +63,8 @@ class StackedBarChart extends React.Component {
     ];
 
     return (
-      <div>
+      <NamespacesConsumer>{t =>
+        <div>
         <VictoryChart
           domainPadding={20}
           width={380}
@@ -116,7 +118,7 @@ class StackedBarChart extends React.Component {
             colorScale={colors}
             data={stackedBar.data.scenarios.find(o => o.scenario === scenario).indicators.find(o => o.indicator === chartName).indicatorGroups.map(
               (chartGroup, i) => (
-                { name: chartGroup.indicatorGroup.concat("        ").substr(0, 16), fill: colors[i] }
+                { name: t('legend.' + chartGroup.indicatorGroup).concat("        ").substr(0, 16), fill: colors[i] }
               )
             )}
             labelComponent={<VictoryLabel style={{ fontSize: '9px' }} />}
@@ -218,7 +220,8 @@ class StackedBarChart extends React.Component {
             </VictoryGroup>
           }
         </VictoryChart>
-      </div>
+        </div>
+      }</NamespacesConsumer>
     )
   }
 }

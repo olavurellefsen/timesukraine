@@ -9,6 +9,7 @@ import common_en from "./translations/en/common.json";
 i18next.init({
   interpolation: { escapeValue: false },
   lng: 'uk',
+  defaultNS: 'common',
   resources: {
     en: {
       common: common_en
