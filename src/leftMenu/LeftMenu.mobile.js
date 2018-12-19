@@ -129,7 +129,7 @@ const ExternalLink = styled.a`
   `;
   ExternalLink.displayName = 'ExternalLink';
 
-class ScenarioSelectionMenu extends React.Component {
+export class ScenarioSelectionMenu extends React.Component {
 
   render() {
     const { i18n } = this.props;

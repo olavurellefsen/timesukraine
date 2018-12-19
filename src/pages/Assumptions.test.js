@@ -3,5 +3,5 @@ import Prerequisites from './Assumptions';
 
 it('renders title', () => {
   const wrapper = shallow(<Prerequisites />);
-  expect(wrapper.find('AboutHeader').children().text()).toEqual('Assumptions');
+  expect(wrapper.find('AboutHeader').children().text()).toEqual('<WithMergedOptions(TransComponent) />');
 });
