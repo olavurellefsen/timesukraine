@@ -10,6 +10,8 @@ import TabsMobile from './tabs/Tabs.mobile'
 import Charts from './charts/Charts'
 import TransportCharts from './charts/TransportCharts'
 import SupplyCharts from './charts/SupplyCharts'
+import ChartsTab4 from './charts/ChartsTab4'
+import ChartsTab5 from './charts/ChartsTab5'
 import About from './pages/About'
 import ScenarioDescriptions from './pages/ScenarioDescriptions'
 import Recommendations from './pages/Recommendations'
@@ -138,7 +140,15 @@ export class App extends React.Component {
                 <Route path='/tab3' render={()=><SupplyCharts 
                   scenarioSelection={this.state}
                   closeWelcome={this.CloseWelcomeWidget}
-                />}/>                
+                />}/>
+                <Route path='/tab4' render={()=><ChartsTab4
+                  scenarioSelection={this.state}
+                  closeWelcome={this.CloseWelcomeWidget}
+                />}/>
+                <Route path='/tab5' render={()=><ChartsTab5 
+                  scenarioSelection={this.state}
+                  closeWelcome={this.CloseWelcomeWidget}
+                />}/>                                 
                 <Route path='/about' component={About} />
                 <Route path='/descriptions' component={ScenarioDescriptions} />
                 <Route path='/recommendations' component={Recommendations} />
