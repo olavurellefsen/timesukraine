@@ -51,6 +51,7 @@ class Tabs extends React.Component {
         <TabItem to='/tab3' selected={this.props.selectedChartgroup === '/tab3'}><Trans i18nKey='tabs.supply-sector' /></TabItem>
         <TabItem to='/tab4' selected={this.props.selectedChartgroup === '/tab4'}><Trans i18nKey='tabs.tab4' /></TabItem>
         <TabItem to='/tab5' selected={this.props.selectedChartgroup === '/tab5'}><Trans i18nKey='tabs.tab5' /></TabItem>
+        <TabItem to='/tab6' selected={this.props.selectedChartgroup === '/tab6'}><Trans i18nKey='tabs.tab6' /></TabItem>
       </TabLayout>
     );
   }

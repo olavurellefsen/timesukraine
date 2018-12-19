@@ -31,8 +31,8 @@ class StackedBarChart extends React.Component {
       rowGutter=-5;
     }    
 
-    let maxY2 = 1;
-    let minY2 = 0;
+    let maxY2 = "1";
+    let minY2 = "0";
     if(combinedChart===true) {
       maxY2 = this.props.maxY2;
       minY2 = this.props.minY2;
@@ -215,10 +215,10 @@ StackedBarChart.propTypes = {
   chartName: PropTypes.string.isRequired,
   chartTitle: PropTypes.string.isRequired,
   combinedChart: PropTypes.bool.isRequired,
-  minY: PropTypes.number.isRequired,
-  maxY: PropTypes.number.isRequired,
-  minY2: PropTypes.number,
-  maxY2: PropTypes.number,  
+  minY: PropTypes.string.isRequired,
+  maxY: PropTypes.string.isRequired,
+  minY2: PropTypes.string,
+  maxY2: PropTypes.string,  
   label: PropTypes.string.isRequired,
   divideValues: PropTypes.number,
   label2: PropTypes.string,

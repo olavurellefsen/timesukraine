@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { VictoryChart, VictoryLabel, VictoryLegend, VictoryGroup, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar, VictoryLine, VictoryTooltip } from 'victory';
-import stackedBar from '../data/tab4data';
+import stackedBar from '../data/tab6data';
 import line from '../data/line';
 import { NamespacesConsumer } from 'react-i18next';
 

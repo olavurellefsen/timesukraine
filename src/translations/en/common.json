@@ -23,7 +23,8 @@
     "transport-sector": "Final consumption",
     "supply-sector": "Other results",
     "tab4": "Tab4",
-    "tab5": "Tab5"
+    "tab5": "Tab5",
+    "tab6": "Tab6"
   },
   "welcome-text": {
     "welcome": "With this tool you can explore a number of scenarios related to the TIMES Ukraine energy model. Select a scenario in the left hand menu and review the results in the charts below.",
