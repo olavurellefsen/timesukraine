@@ -30,11 +30,11 @@ const ScenarioOption = styled.div`
   position: relative;
   width: 100%;
   border-radius: 0;
-  background-color: ${props => (props.selected ? '#b50404' : (props.selected2 ? 'green' : 'inherit'))};
+  background-color: ${props => (props.selected ? 'green' : (props.selected2 ? 'red' : 'inherit'))};
   color: ${props => (props.selected ? 'white' : (props.selected2 ? 'white' : 'rgb(184,176,183)'))};
   &:hover {
     cursor: pointer;
-    background-color: ${props => (props.selected ? '#b50404' : (props.selected2 ? 'green' : '#555'))};
+    background-color: ${props => (props.selected ? 'green' : (props.selected2 ? 'red' : '#555'))};
     > * {
       display: block;
       font-weight: ${props => (props.selected ? 'bold' : (props.selected2 ? 'bold' : 'normal'))};

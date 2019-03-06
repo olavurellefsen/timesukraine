@@ -7,8 +7,8 @@ it('renders the chart title', () => {
   const chartName = "web_Renewables Electricity Pro";
   const chartTitle = "Dummy Title";
   const combinedChart = false;
-  const minY = 0;
-  const maxY = 1;
+  const minY = "0";
+  const maxY = "1";
   const label = "Dummy Label";
 
   const wrapper = shallow(<StackedBarDiffChart

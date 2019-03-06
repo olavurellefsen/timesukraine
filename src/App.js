@@ -10,13 +10,16 @@ import TabsMobile from './tabs/Tabs.mobile'
 import Charts from './charts/Charts'
 import TransportCharts from './charts/TransportCharts'
 import SupplyCharts from './charts/SupplyCharts'
+import ChartsTab4 from './charts/ChartsTab4'
+import ChartsTab5 from './charts/ChartsTab5'
+import ChartsTab6 from './charts/ChartsTab6'
 import About from './pages/About'
 import ScenarioDescriptions from './pages/ScenarioDescriptions'
 import Recommendations from './pages/Recommendations'
 import Assumptions from './pages/Assumptions'
 import GetUpdates from './pages/GetUpdates'
 import scenarioCombinations from './data/scenarioCombinations'
-import { translate } from 'react-i18next';
+import { withNamespaces } from 'react-i18next';
 
 ReactGA.initialize('UA-130272068-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -138,7 +141,19 @@ export class App extends React.Component {
                 <Route path='/tab3' render={()=><SupplyCharts 
                   scenarioSelection={this.state}
                   closeWelcome={this.CloseWelcomeWidget}
-                />}/>                
+                />}/>
+                <Route path='/tab4' render={()=><ChartsTab4
+                  scenarioSelection={this.state}
+                  closeWelcome={this.CloseWelcomeWidget}
+                />}/>
+                <Route path='/tab5' render={()=><ChartsTab5 
+                  scenarioSelection={this.state}
+                  closeWelcome={this.CloseWelcomeWidget}
+                />}/>
+                <Route path='/tab6' render={()=><ChartsTab6 
+                  scenarioSelection={this.state}
+                  closeWelcome={this.CloseWelcomeWidget}
+                />}/>                                                       
                 <Route path='/about' component={About} />
                 <Route path='/descriptions' component={ScenarioDescriptions} />
                 <Route path='/recommendations' component={Recommendations} />
@@ -152,4 +167,4 @@ export class App extends React.Component {
   }
 }
 
-export default withRouter(translate('common')(App));
+export default withRouter(withNamespaces('common')(App));

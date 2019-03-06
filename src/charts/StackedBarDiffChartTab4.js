@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {VictoryChart, VictoryLabel, VictoryLegend, VictoryGroup, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar, VictoryLine, VictoryTooltip} from 'victory';
-import stackedBar from '../data/transport';
+import stackedBar from '../data/tab4data';
 import line from '../data/line';
 
 const ChartHeader = styled(VictoryLabel)`
@@ -31,8 +31,8 @@ class StackedBarChart extends React.Component {
       rowGutter=-5;
     }    
 
-    let maxY2 = "1";
-    let minY2 = "0";
+    let maxY2 = 1;
+    let minY2 = 0;
     if(combinedChart===true) {
       maxY2 = this.props.maxY2;
       minY2 = this.props.minY2;

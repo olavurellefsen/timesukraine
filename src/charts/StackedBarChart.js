@@ -4,15 +4,16 @@ import styled from 'styled-components';
 import { VictoryChart, VictoryLabel, VictoryLegend, VictoryGroup, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar, VictoryLine, VictoryTooltip } from 'victory';
 import stackedBar from '../data/stackedBar';
 import line from '../data/line';
+import { NamespacesConsumer } from 'react-i18next';
 
-const ChartHeader = styled(VictoryLabel) `
+const ChartHeader = styled(VictoryLabel)`
   text-anchor: start;
   fill: #000000;
   font-family: inherit;
   font-size: 18px;
   font-weight: bold;
   `;
-  ChartHeader.displayName = 'ChartHeader';
+ChartHeader.displayName = 'ChartHeader';
 
 class StackedBarChart extends React.Component {
   render() {
@@ -24,11 +25,11 @@ class StackedBarChart extends React.Component {
     const periods = [2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050];
     let gutter, rowGutter;
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
-      gutter=0;
-      rowGutter=0;
+      gutter = 0;
+      rowGutter = 0;
     } else {
-      gutter=-40;
-      rowGutter=-5;
+      gutter = -40;
+      rowGutter = -5;
     }
 
     let maxY2 = 1;
@@ -53,16 +54,9 @@ class StackedBarChart extends React.Component {
       "#454023", "#4b7060", "#4221a6", "#f2aceb", "#ede095", "#0395f7", "#7346fa", "#82627f"
     ];
 
-    const colors2 = [
-      "#2cbae6", "#96d957", "#cac364", "#5cd3ff", "#a998cb", "#c2d249", "#63b9c6", "#9cc5a8",
-      "#cfcc00", "#cf9900", "#cf6600", "#cf0000", "#690000", "#cf0099", "#9c3399",
-      "#690066", "#360066", "#360099", "#0366cc", "#03ccff", "#69cc33", "#36cc00",
-      "#7ad199", "#15535c", "#171442", "#312e30", "#4a713c", "#39e682", "#460154", "#cc53ec",
-      "#154023", "#1b7060", "#1221a6", "#c2aceb", "#bde095", "#3395f7", "#4346fa", "#52627f"
-    ];
-
     return (
-      <div>
+      <NamespacesConsumer>{t =>
+        <div>
         <VictoryChart
           domainPadding={20}
           width={380}
@@ -116,7 +110,7 @@ class StackedBarChart extends React.Component {
             colorScale={colors}
             data={stackedBar.data.scenarios.find(o => o.scenario === scenario).indicators.find(o => o.indicator === chartName).indicatorGroups.map(
               (chartGroup, i) => (
-                { name: chartGroup.indicatorGroup.concat("        ").substr(0, 16), fill: colors[i] }
+                { name: t('legend.' + chartGroup.indicatorGroup).concat("        ").substr(0, 16), fill: colors[i] }
               )
             )}
             labelComponent={<VictoryLabel style={{ fontSize: '9px' }} />}
@@ -168,7 +162,7 @@ class StackedBarChart extends React.Component {
                         y={(datum) => datum['total'] / this.props.maxY}
                         labelComponent={<VictoryTooltip />}
                         style={{
-                          data: { fill: colors2[i] }
+                          data: { fill: colors[i] }
                         }}
                       />
                     )
@@ -218,7 +212,8 @@ class StackedBarChart extends React.Component {
             </VictoryGroup>
           }
         </VictoryChart>
-      </div>
+        </div>
+      }</NamespacesConsumer>
     )
   }
 }
@@ -234,10 +229,10 @@ StackedBarChart.propTypes = {
   chartName: PropTypes.string.isRequired,
   chartTitle: PropTypes.string.isRequired,
   combinedChart: PropTypes.bool.isRequired,
-  minY: PropTypes.number.isRequired,
-  maxY: PropTypes.number.isRequired,
-  minY2: PropTypes.number,
-  maxY2: PropTypes.number,
+  minY: PropTypes.string.isRequired,
+  maxY: PropTypes.string.isRequired,
+  minY2: PropTypes.string,
+  maxY2: PropTypes.string,
   label: PropTypes.string.isRequired,
   divideValues: PropTypes.number,
   label2: PropTypes.string,

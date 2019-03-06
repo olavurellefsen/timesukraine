@@ -21,8 +21,8 @@ const TabLayout = styled.div`
     visibility: visible;
   `}
   `;
-  TabLayout.displayName = 'TabLayout';
-const TabItem  = styled(Link)`
+TabLayout.displayName = 'TabLayout';
+const TabItem = styled(Link)`
   font-weight: ${props => (props.selected ? 'bold' : 'normal')};
   font-size: 1em;
   margin: 3px 0px 0px 0px;
@@ -39,16 +39,19 @@ const TabItem  = styled(Link)`
   color: ${props => (props.selected ? 'black' : 'inherit')};
   background: ${props => (props.selected ? 'white' : 'inherit')};
   `;
-  TabItem.displayName = 'TabItem';
+TabItem.displayName = 'TabItem';
 
 class Tabs extends React.Component {
 
   render() {
     return (
       <TabLayout>
-          <TabItem to='/' selected={this.props.selectedChartgroup==='/'}><Trans i18nKey='tabs.main-results' /></TabItem>
-          <TabItem to='/tab2' selected={this.props.selectedChartgroup==='/tab2'}><Trans i18nKey='tabs.transport-sector' /></TabItem>
-          <TabItem to='/tab3' selected={this.props.selectedChartgroup==='/tab3'}><Trans i18nKey='tabs.supply-sector' /></TabItem>
+        <TabItem to='/' selected={this.props.selectedChartgroup === '/'}><Trans i18nKey='tabs.main-results' /></TabItem>
+        <TabItem to='/tab2' selected={this.props.selectedChartgroup === '/tab2'}><Trans i18nKey='tabs.transport-sector' /></TabItem>
+        <TabItem to='/tab3' selected={this.props.selectedChartgroup === '/tab3'}><Trans i18nKey='tabs.supply-sector' /></TabItem>
+        <TabItem to='/tab4' selected={this.props.selectedChartgroup === '/tab4'}><Trans i18nKey='tabs.tab4' /></TabItem>
+        <TabItem to='/tab5' selected={this.props.selectedChartgroup === '/tab5'}><Trans i18nKey='tabs.tab5' /></TabItem>
+        <TabItem to='/tab6' selected={this.props.selectedChartgroup === '/tab6'}><Trans i18nKey='tabs.tab6' /></TabItem>
       </TabLayout>
     );
   }

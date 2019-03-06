@@ -1,5 +1,5 @@
 import React from 'react';
-import LeftMenu from './LeftMenu';
+import {ScenarioSelectionMenu} from './LeftMenu';
 
 it('renders the menu', () => {
   const scenarioSelection = {
@@ -8,11 +8,12 @@ it('renders the menu', () => {
     showWelcome: true,
     showDifference: false
   };
-  const wrapper = shallow(<LeftMenu
+  const wrapper = shallow(<ScenarioSelectionMenu
     updateScenarioSelection={() => (false)}
     scenarioSelection={scenarioSelection}
     scenarioCombinations={{scenarioOptions: []}}
     toggleDifference={() => (false)}
+    t={key => key}
   />);
   expect(wrapper.find('MenuLayout')).toHaveLength(1);
 });

@@ -3,5 +3,5 @@ import About from './About';
 
 it('renders title', () => {
   const wrapper = shallow(<About />);
-  expect(wrapper.find('AboutHeader').children().text()).toEqual('About the tool');
+  expect(wrapper.find('AboutHeader').children().text()).toEqual('<WithMergedOptions(TransComponent) />');
 });
