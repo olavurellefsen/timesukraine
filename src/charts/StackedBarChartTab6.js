@@ -170,7 +170,7 @@ class StackedBarChart extends React.Component {
                         y={(datum) => datum['total'] / this.props.maxY}
                         labelComponent={<VictoryTooltip />}
                         style={{
-                          data: { fill: colors2[i] }
+                          data: { fill: colors[i] }
                         }}
                       />
                     )
