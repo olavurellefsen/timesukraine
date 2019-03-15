@@ -3,8 +3,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Welcome from '../alert/Welcome'
-import StackedBarChart from './StackedBarChartTransport'
-import StackedBarDiffChart from './StackedBarDiffChartTransport'
+import StackedBarChart from './StackedBarChartTab2'
+import StackedBarDiffChart from './StackedBarDiffChartTab2'
 import { NamespacesConsumer } from 'react-i18next';
 
 const MainArea = styled.div`

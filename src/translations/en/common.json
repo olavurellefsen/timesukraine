@@ -20,8 +20,8 @@
   },
   "tabs": {
     "main-results": "Main results",
-    "transport-sector": "Final consumption",
-    "supply-sector": "Other results",
+    "tab2": "Final consumption",
+    "tab3": "Other results",
     "tab4": "Tab4",
     "tab5": "Tab5",
     "tab6": "Tab6"
