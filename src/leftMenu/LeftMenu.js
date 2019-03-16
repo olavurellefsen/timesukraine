@@ -42,7 +42,6 @@ const MenuHeaderLeft = styled.div`
 const MenuHeaderRight = styled.div`
   padding: 0 12px 5px 0px;
   margin: 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -51,7 +50,7 @@ const MenuHeaderRight = styled.div`
 const AppLogo  = styled.img`
   width: 45px;
   height: 67px;
-  margin-left: 5px;
+  margin-left: 20px;
   border: 0;
   `;
   AppLogo.displayName = 'AppLogo';
@@ -153,6 +152,15 @@ const ExternalLink = styled.a`
   }
   `;
   ExternalLink.displayName = 'ExternalLink';
+const ModelersLogo  = styled.img`
+  align-self: flex-start;
+  width: 160px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  margin-bottom: 20px;
+  `;
+ModelersLogo.displayName = 'ModelersLogo';  
 
 export class ScenarioSelectionMenu extends React.Component {
 
@@ -206,6 +214,7 @@ export class ScenarioSelectionMenu extends React.Component {
         </ToggleDifference>
         <MenuSeparatorLine />
         <MenuFooter>
+          <ModelersLogo src='images/times-ukraine-modellers.gif' />
           <CopyrightNotice>
             <ExternalLink href='http://www.tokni.com'><Trans i18nKey='main-menu.online-version-from-tokni' /></ExternalLink>
           </CopyrightNotice>
