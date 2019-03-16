@@ -8,7 +8,7 @@ import { Trans } from 'react-i18next';
 
 const TabLayout = styled.div`
   display: none;
-  ${breakpoint('desktop')`Fsup
+  ${breakpoint('desktop')`
     display: flex;  
     height: 50px;
     flex-direction: row;
