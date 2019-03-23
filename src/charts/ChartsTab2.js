@@ -30,21 +30,21 @@ const Charts = (props) => {
         {(props.scenarioSelection.showWelcome === true) && <Welcome closeWelcome={props.closeWelcome} />}
         {(props.scenarioSelection.showDifference === false || (props.scenarioSelection.showDifference === true && selectedScenario2 === "")) &&
           <Flex>
-            <StackedBarChart chartName='web_Final Energy to AGR by Sub' chartTitle={t('chart-titles.final-energy-to-AGR')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={'0'} maxY={'3500'} />
-            <StackedBarChart chartName='web_Final Energy to COM by Sub' chartTitle={t('chart-titles.final-energy-to-COM')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={'0'} maxY={'9000'} />
-            <StackedBarChart chartName='web_Final Energy to IND NEEAP' chartTitle={t('chart-titles.final-energy-to-IND')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={'0'} maxY={'35000'} />
-            <StackedBarChart chartName='web_Final Energy to RES by Sub' chartTitle={t('chart-titles.final-energy-to-RES')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='PJ' minY={'0'} maxY={'1200'} />
-            <StackedBarChart chartName='web_Final Energy to TRN by Sub' chartTitle={t('chart-titles.final-energy-to-TRN')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={'0'} maxY={'12000'} />
-          </Flex>
+           	<StackedBarChart chartName='web2_All Electricity Capacity ' chartTitle={t('chart-titles.all-electric-capacity')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='GW' minY={'0'} maxY={'160'} />
+            <StackedBarChart chartName='web2_All Electricity NEW Capac' chartTitle={t('chart-titles.new-capacity')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='GW' minY={'0'} maxY={'40'} />
+            <StackedBarChart chartName='web2_All Electricity Productio' chartTitle={t('chart-titles.electric-production-incl-import')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Billion Kwh' minY={'0'} maxY={'400'} />
+            <StackedBarChart chartName='web2_HEAT Production All types' chartTitle={t('chart-titles.heat-production')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='PJ' minY={'0'} maxY={'800'} />
+            <StackedBarChart chartName='web2_Renewables Electricity Pr' chartTitle={t('chart-titles.electricity-from-renewables')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Billion Kwh' minY={'0'} maxY={'180'} />
+		  </Flex>
         }
         {(props.scenarioSelection.showDifference === true && selectedScenario2 !== "") &&
           <Flex>
-            <StackedBarDiffChart chartName='web_Final Energy to AGR by Sub' chartTitle={t('chart-titles.final-energy-to-AGR')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={'0'} maxY={'2736'} />
-            <StackedBarDiffChart chartName='web_Final Energy to COM by Sub' chartTitle={t('chart-titles.final-energy-to-COM')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={'0'} maxY={'2967'} />
-            <StackedBarDiffChart chartName='web_Final Energy to IND NEEAP' chartTitle={t('chart-titles.final-energy-to-IND')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={'0'} maxY={'17047'} />
-            <StackedBarDiffChart chartName='web_Final Energy to RES by Sub' chartTitle={t('chart-titles.final-energy-to-RES')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='PJ' minY={'0'} maxY={'603'} />
-            <StackedBarDiffChart chartName='web_Final Energy to TRN by Sub' chartTitle={t('chart-titles.final-energy-to-TRN')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={'0'} maxY={'3835'} />
-          </Flex>
+            <StackedBarDiffChart chartName='web2_All Electricity Capacity ' chartTitle={t('chart-titles.all-electric-capacity')}  selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='GW' minY={'0'} maxY={'100'} />
+            <StackedBarDiffChart chartName='web2_All Electricity NEW Capac' chartTitle={t('chart-titles.new-capacity')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='GW' minY={'0'} maxY={'30'} />
+            <StackedBarDiffChart chartName='web2_All Electricity Productio' chartTitle={t('chart-titles.electric-production-incl-import')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Billion Kwh' minY={'0'} maxY={'300'} />
+            <StackedBarDiffChart chartName='web2_HEAT Production All types' chartTitle={t('chart-titles.heat-production')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='PJ' minY={'0'} maxY={'12000'} />
+            <StackedBarDiffChart chartName='web2_Renewables Electricity Pr' chartTitle={t('chart-titles.electricity-from-renewables')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Billion Kwh' minY={'0'} maxY={'120'} />
+		  </Flex>
         }
       </MainArea>
     }</NamespacesConsumer>

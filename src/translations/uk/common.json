@@ -19,9 +19,9 @@
     "subscribe": "Питання"
   },  
   "tabs": {
-    "main-results": "Основні результати",
-    "tab2": "Кінцеве споживання",
-    "tab3": "Інші результати",
+    "main-results": "Загальні результати",
+    "tab2": "Електро-/теплогенерація",
+    "tab3": "Кінцеве споживання",
     "tab4": "Tab4",
     "tab5": "Tab5",
     "tab6": "Tab6"
@@ -38,7 +38,7 @@
     "new-capacity": "Електрогенеруючі (нові) потужності",
     "electric-production-incl-import": "Електогенерація (вкл. імпорт)",
     "heat-production": "Теплогенерація",
-    "electricity-from-renewables": "Електогенерація ВДЕ",
+    "electricity-from-renewables": "Електрогенерація ВДЕ",
     "final-energy-to-AGR": "Сільське господарство",
     "final-energy-to-COM": "Комерційний сектор",
     "final-energy-to-IND": "Промисловість",
