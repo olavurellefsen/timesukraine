@@ -31,24 +31,24 @@ const Charts = (props) => {
         {(props.scenarioSelection.showDisclaimer === true) && <Disclaimer closeWelcome={props.closeWelcome} />}
         {(props.scenarioSelection.showDifference === false || (props.scenarioSelection.showDifference === true && selectedScenario2 === "")) &&
           <Flex>
-            <StackedBarChart chartName='web1_CO2-eq Emissions by Secto' chartTitle={t('chart-titles.CO2-EQ-emissions')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Mt' minY={'0'} maxY={'350'} />
-            <StackedBarChart chartName='web1_Expenditures' chartTitle={t('chart-titles.expenditures')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='B Euro' minY={'0'} maxY={'130'} />
-            <StackedBarChart chartName='web1_Lump_Investments' chartTitle={t('chart-titles.lump-investment')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='B Euro' minY={'0'} maxY={'250'} />
-            <StackedBarChart chartName='web1_Primary Energy balance' chartTitle={t('chart-titles.primary-energy-balance')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={'0'} maxY={'1500'} />
-            <StackedBarChart chartName='web1_TPES' chartTitle={t('chart-titles.tpes')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={'0'} maxY={'150'} />
-		    <StackedBarChart chartName='web3_Final Energy by Fuels' chartTitle={t('chart-titles.final-energy-by-fuels')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={'0'} maxY={'100'} />
-            <StackedBarChart chartName='web3_Final Energy by Sector' chartTitle={t('chart-titles.final-energy-by-sector')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={'0'} maxY={'100'} />
+            <StackedBarChart chartName='web1_CO2-eq Emissions by Secto' chartTitle={t('chart-titles.CO2-EQ-emissions')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Mt' minY={0} maxY={350} />
+            <StackedBarChart chartName='web1_Expenditures' chartTitle={t('chart-titles.expenditures')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='B Euro' minY={0} maxY={130} />
+            <StackedBarChart chartName='web1_Lump_Investments' chartTitle={t('chart-titles.lump-investment')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='B Euro' minY={0} maxY={250} />
+            <StackedBarChart chartName='web1_Primary Energy balance' chartTitle={t('chart-titles.primary-energy-balance')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={0} maxY={1500} />
+            <StackedBarChart chartName='web1_TPES' chartTitle={t('chart-titles.tpes')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={0} maxY={150} />
+            <StackedBarChart chartName='web3_Final Energy by Fuels' chartTitle={t('chart-titles.final-energy-by-fuels')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={0} maxY={100} />
+            <StackedBarChart chartName='web3_Final Energy by Sector' chartTitle={t('chart-titles.final-energy-by-sector')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={0} maxY={100} />
 		  </Flex>
         }
         {(props.scenarioSelection.showDifference === true && selectedScenario2 !== "") &&
           <Flex>
-            <StackedBarDiffChart chartName='web1_CO2-eq Emissions by Secto' chartTitle={t('chart-titles.CO2-EQ-emissions')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Mt' minY={'0'} maxY={'105'} />
-            <StackedBarDiffChart chartName='web1_Expenditures' chartTitle={t('chart-titles.expenditures')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='B Euro' minY={'0'} maxY={'3900'} />
-            <StackedBarDiffChart chartName='web1_Lump_Investments' chartTitle={t('chart-titles.lump-investment')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='B Euro' minY={'0'} maxY={'18000'} />
-            <StackedBarDiffChart chartName='web1_Primary Energy balance' chartTitle={t('chart-titles.primary-energy-balance')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={'0'} maxY={'12000'} />
-            <StackedBarDiffChart chartName='web1_TPES' chartTitle={t('chart-titles.tpes')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={'0'} maxY={'18000'} />
-            <StackedBarDiffChart chartName='web3_Final Energy by Fuels' chartTitle={t('chart-titles.final-energy-by-fuels')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={'0'} maxY={'2736'} />
-            <StackedBarDiffChart chartName='web3_Final Energy by Sector' chartTitle={t('chart-titles.final-energy-by-sector')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={'0'} maxY={'2736'} />
+            <StackedBarDiffChart chartName='web1_CO2-eq Emissions by Secto' chartTitle={t('chart-titles.CO2-EQ-emissions')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Mt' minY={0} maxY={105} />
+            <StackedBarDiffChart chartName='web1_Expenditures' chartTitle={t('chart-titles.expenditures')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='B Euro' minY={0} maxY={3900} />
+            <StackedBarDiffChart chartName='web1_Lump_Investments' chartTitle={t('chart-titles.lump-investment')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='B Euro' minY={0} maxY={18000} />
+            <StackedBarDiffChart chartName='web1_Primary Energy balance' chartTitle={t('chart-titles.primary-energy-balance')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={0} maxY={12000} />
+            <StackedBarDiffChart chartName='web1_TPES' chartTitle={t('chart-titles.tpes')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={0} maxY={18000} />
+            <StackedBarDiffChart chartName='web3_Final Energy by Fuels' chartTitle={t('chart-titles.final-energy-by-fuels')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={0} maxY={2736} />
+            <StackedBarDiffChart chartName='web3_Final Energy by Sector' chartTitle={t('chart-titles.final-energy-by-sector')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={0} maxY={2736} />
 		  </Flex>
         }
       </MainArea>
