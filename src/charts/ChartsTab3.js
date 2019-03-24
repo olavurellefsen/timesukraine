@@ -41,13 +41,13 @@ const Charts = (props) => {
         }
         {(props.scenarioSelection.showDifference === true && selectedScenario2 !== "") &&
           <Flex>
-            <StackedBarDiffChart chartName='web3_Final Energy by Fuels' chartTitle={t('chart-titles.final-energy-by-fuels')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={0} maxY={2736} />
-            <StackedBarDiffChart chartName='web3_Final Energy by Sector' chartTitle={t('chart-titles.final-energy-by-sector')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={0} maxY={2736} />
-            <StackedBarDiffChart chartName='web3_Final Energy to AGR by Su' chartTitle={t('chart-titles.final-energy-to-AGR')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={0} maxY={2736} />
-            <StackedBarDiffChart chartName='web3_Final Energy to COM by Su' chartTitle={t('chart-titles.final-energy-to-COM')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={0} maxY={2967} />
-            <StackedBarDiffChart chartName='web3_Final Energy to IND NEEAP' chartTitle={t('chart-titles.final-energy-to-IND')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={0} maxY={17047} />
-            <StackedBarDiffChart chartName='web3_Final Energy to RES by Su' chartTitle={t('chart-titles.final-energy-to-RES')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='PJ' minY={0} maxY={603} />
-            <StackedBarDiffChart chartName='web3_Final Energy to TRN by Su' chartTitle={t('chart-titles.final-energy-to-TRN')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={0} maxY={3835} />
+            <StackedBarDiffChart chartName='web3_Final Energy by Fuels' chartTitle={t('chart-titles.final-energy-by-fuels')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={-2700} maxY={2700} />
+            <StackedBarDiffChart chartName='web3_Final Energy by Sector' chartTitle={t('chart-titles.final-energy-by-sector')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='mtoe' minY={-2700} maxY={2700} />
+            <StackedBarDiffChart chartName='web3_Final Energy to AGR by Su' chartTitle={t('chart-titles.final-energy-to-AGR')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={-2700} maxY={2700} />
+            <StackedBarDiffChart chartName='web3_Final Energy to COM by Su' chartTitle={t('chart-titles.final-energy-to-COM')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={-2900} maxY={2900} />
+            <StackedBarDiffChart chartName='web3_Final Energy to IND NEEAP' chartTitle={t('chart-titles.final-energy-to-IND')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={-17000} maxY={17000} />
+            <StackedBarDiffChart chartName='web3_Final Energy to RES by Su' chartTitle={t('chart-titles.final-energy-to-RES')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='PJ' minY={-600} maxY={600} />
+            <StackedBarDiffChart chartName='web3_Final Energy to TRN by Su' chartTitle={t('chart-titles.final-energy-to-TRN')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='ktoe' minY={-3800} maxY={3800} />
 		  </Flex>
         }
       </MainArea>
