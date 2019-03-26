@@ -53,6 +53,18 @@
     "final-energy-to-TRN": "Транспорт"
   },
   "legend": {
+    "EMI_AGR": "С/г",
+	"EMI_COM": "Комерційний",
+	"EMI_ELC": "Генерація",
+	"EMI_IND": "Промисловість",
+	"EMI_RSD": "Побутовий",
+	"EMI_SUP": "Постачання",
+	"EMI_TRA": "Транспорт",
+    "CONSAGR":    "С/г",
+    "CONSCOM":    "Комерційний",
+    "CONSIND-EN": "Промисловість",
+    "CONSRSD":    "Побутовий",
+    "CONSTRA":    "Транспорт",
     "TRABIO": "Biomass",
     "TRABDL": "Biodiesel",
     "TRACOA": "Coal",

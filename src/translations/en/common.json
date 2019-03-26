@@ -53,6 +53,18 @@
     "final-energy-to-TRN": "Transport"
   },
   "legend": {
+	"EMI_AGR": "Agriculture",
+	"EMI_COM": "Commercial",
+	"EMI_ELC": "Power and Heat",
+	"EMI_IND": "Industry",
+	"EMI_RSD": "Residential",
+	"EMI_SUP": "Supply",
+	"EMI_TRA": "Transport",
+	"CONSAGR":    "Agriculture",
+    "CONSCOM":    "Commercial",
+    "CONSIND-EN": "Industry",
+    "CONSRSD":    "Residential",
+    "CONSTRA":    "Transport",
     "TRABIO": "Biomass",
     "TRABDL": "Biodiesel",
     "TRACOA": "Coal",
