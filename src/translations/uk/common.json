@@ -34,6 +34,13 @@
     "to-the-front-page": "На першу сторінку"
   },
   "chart-titles": {
+    "final-energy-by-fuels": "Кінцеве споживання (паливо)",
+	"final-energy-by-sector": "Кінцеве споживання (сектор)",
+	"tpes": "Загальне первинне постачання енергії",
+	"primary-energy-balance": "Імпорт/експорт/видобуток ресурсів",
+	"lump-investment": "Інвестиції",
+	"expenditures": "Вартість системи",
+	"CO2-EQ-emissions": "Викиди парникових газів (СО2е)",
     "all-electric-capacity": "Електрогенеруючі (усі) потужності",
     "new-capacity": "Електрогенеруючі (нові) потужності",
     "electric-production-incl-import": "Електогенерація (вкл. імпорт)",
@@ -43,12 +50,7 @@
     "final-energy-to-COM": "Комерційний сектор",
     "final-energy-to-IND": "Промисловість",
     "final-energy-to-RES": "Побутовий сектор",
-    "final-energy-to-TRN": "Транспорт",
-    "CO2-EQ-emissions": "Викиди CO2екв ",
-    "fuel-costs": "Видатки на паливо",
-    "investment-costs": "Інвестиції",
-    "OandM-costs": "O&M costs",
-    "fuel-import": "Fuel import"
+    "final-energy-to-TRN": "Транспорт"
   },
   "legend": {
     "TRABIO": "Biomass",

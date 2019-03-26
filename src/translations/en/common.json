@@ -34,7 +34,14 @@
     "to-the-front-page": "To the front page"
   },
   "chart-titles": {
-    "all-electric-capacity": "All Electric Capacity",
+    "final-energy-by-fuels": "Final Consumption by Fuel",
+	"final-energy-by-sector": "Final Consumption by Sector",
+	"tpes": "Total Primary Energy Supply",
+	"primary-energy-balance": "Resource Import/Export/Extraction",
+	"lump-investment": "Investments",
+	"expenditures": "System Costs",
+	"CO2-EQ-emissions": "GHG Emissions (CO2e)",
+	"all-electric-capacity": "All Electric Capacity",
     "new-capacity": "New Capacity",
     "electric-production-incl-import": "Electric Production (incl. import)",
     "heat-production": "Heat Production",
@@ -43,12 +50,7 @@
     "final-energy-to-COM": "Commercial",
     "final-energy-to-IND": "Industry",
     "final-energy-to-RES": "Residential",
-    "final-energy-to-TRN": "Transport",
-    "CO2-EQ-emissions": "CO2eq Emissions",
-    "fuel-costs": "Fuel Costs",
-    "investment-costs": "Investment Costs",
-    "OandM-costs": "O&M Costs",
-    "fuel-import": "Fuel Import"
+    "final-energy-to-TRN": "Transport"
   },
   "legend": {
     "TRABIO": "Biomass",
