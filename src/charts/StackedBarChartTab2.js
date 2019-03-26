@@ -110,7 +110,7 @@ class StackedBarChart extends React.Component {
             colorScale={colors}
             data={stackedBar.data.scenarios.find(o => o.scenario === scenario).indicators.find(o => o.indicator === chartName).indicatorGroups.map(
               (chartGroup, i) => (
-                { name: chartGroup.indicatorGroup.concat("        ").substr(0, 16), fill: colors[i] }
+                { name: t('legend.' + chartGroup.indicatorGroup).concat("        ").substr(0, 16), fill: colors[i] }
               )
             )}
             labelComponent={<VictoryLabel style={{ fontSize: '9px' }} />}
