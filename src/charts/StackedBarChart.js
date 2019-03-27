@@ -126,7 +126,7 @@ class StackedBarChart extends React.Component {
                         chartGroupValue => (
                           {
                             ...chartGroupValue,
-                            label: chartGroup.indicatorGroup + ': ' +
+                            label: t('legend.' + chartGroup.indicatorGroup) + ': ' +
                               (chartGroupValue.total / this.props.divideValues).toFixed(2)
                           }
                         )
@@ -153,7 +153,7 @@ class StackedBarChart extends React.Component {
                           chartGroupValue => (
                             {
                               ...chartGroupValue,
-                              label: chartGroup.indicatorGroup +
+                              label: t('legend.' + chartGroup.indicatorGroup) +
                                 ': ' + (chartGroupValue.total / this.props.divideValues).toFixed(2)
                             }
                           )
@@ -185,7 +185,7 @@ class StackedBarChart extends React.Component {
                   )
                 }
                 x='year'
-                style={{ data: { stroke: 'red' }, labels: { fontSize: '8px' } }}
+                style={{ data: { stroke: 'green' }, labels: { fontSize: '8px' } }}
                 y={(datum) => datum['total'] / maxY2}
                 animate={{ duration: 500 }}
                 labelComponent={<VictoryLabel dy={7} />}
@@ -203,7 +203,7 @@ class StackedBarChart extends React.Component {
                     )
                   }
                   x='year'
-                  style={{ data: { stroke: 'green' }, labels: { fontSize: '8px' } }}
+                  style={{ data: { stroke: 'red' }, labels: { fontSize: '8px' } }}
                   y={(datum) => datum['total'] / maxY2}
                   animate={{ duration: 500 }}
                   labelComponent={<VictoryLabel dy={7} />}

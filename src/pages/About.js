@@ -36,6 +36,7 @@ const AboutBody = styled.p`
 export default () => (
   <AboutContainer>
     <AboutHeader><Trans i18nKey='main-menu.about-the-tool' /></AboutHeader>
+	<AboutBody><Trans i18nKey='tool.text' /></AboutBody>
     <AboutBody><Link to='/'><Trans i18nKey='pages.to-the-front-page' /></Link></AboutBody>
     <AboutHeader2></AboutHeader2>
   </AboutContainer>

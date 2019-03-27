@@ -31,6 +31,7 @@ const AboutBody = styled.p`
 export default () => (
   <AboutContainer>
 	<AboutHeader><Trans i18nKey='main-menu.subscribe-to-updates' /></AboutHeader>
+	<AboutBody><Trans i18nKey='more.text' /> </AboutBody>
     <AboutBody><Link to='/'><Trans i18nKey='pages.to-the-front-page' /></Link></AboutBody>
   </AboutContainer>
 )

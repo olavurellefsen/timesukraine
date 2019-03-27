@@ -128,6 +128,15 @@ const ExternalLink = styled.a`
   }
   `;
   ExternalLink.displayName = 'ExternalLink';
+const ModelersLogo  = styled.img`
+  align-self: flex-start;
+  width: 65px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  margin-bottom: 10px;
+  `;
+ModelersLogo.displayName = 'ModelersLogo';  
 
 export class ScenarioSelectionMenu extends React.Component {
 
@@ -175,6 +184,7 @@ export class ScenarioSelectionMenu extends React.Component {
         </ToggleDifference>
         <MenuSeparatorLine />        
         <MenuFooter>
+          <ModelersLogo src='images/times-ukraine-modellers.gif' />
           <CopyrightNotice>
             <ExternalLink href='http://www.tokni.com'><Trans i18nKey='main-menu.online-version-from-tokni' /></ExternalLink>
           </CopyrightNotice>

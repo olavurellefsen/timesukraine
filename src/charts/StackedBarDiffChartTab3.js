@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {VictoryChart, VictoryLabel, VictoryLegend, VictoryGroup, VictoryStack, VictoryTheme, VictoryAxis, VictoryBar, VictoryLine, VictoryTooltip} from 'victory';
-import stackedBar from '../data/supplySector';
+import stackedBar from '../data/tab3data';
 import line from '../data/line';
+import { NamespacesConsumer } from 'react-i18next';
 
 const ChartHeader = styled(VictoryLabel)`
   text-anchor: start;
@@ -23,6 +24,9 @@ class StackedBarChart extends React.Component {
     const combinedChart = this.props.combinedChart;
     const periods = [2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050];
     let gutter, rowGutter;
+    let minY = this.props.minY;
+    let maxY = this.props.maxY;
+
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
       gutter=0;
       rowGutter=0;
@@ -31,16 +35,16 @@ class StackedBarChart extends React.Component {
       rowGutter=-5;
     }    
 
-    let maxY2 = "1";
-    let minY2 = "0";
+    let maxY2 = 1;
+    let minY2 = 0;
     if(combinedChart===true) {
       maxY2 = this.props.maxY2;
       minY2 = this.props.minY2;
     }
 
     let yDomain = [0, 1];
-    if(this.props.minY<0 || minY2<0) {
-      let stackedRatio = this.props.minY/this.props.maxY;
+    if(minY<0 || minY2<0) {
+      let stackedRatio = minY/maxY;
       let lineRatio = minY2/maxY2;
       yDomain = stackedRatio<lineRatio ? [stackedRatio,1] : [lineRatio,1];
     }
@@ -63,6 +67,31 @@ class StackedBarChart extends React.Component {
           })
         )
       );
+    // Find the minimum and maximum stacked values
+    let minValue = -0.00001;
+    let maxValue = 0.00001;
+    for(var i=0; i<periods.length; i++) {
+      let totalValuePos = 0;
+      let totalValueNeg = 0;
+      for(var j=0; j<dataset3.length; j++) {
+        let value = dataset3[j].indicatorGroupValues[i].total;
+        if(value<0) {
+          totalValueNeg += value;
+        } else {
+          totalValuePos += value;
+        }
+        
+      }
+      if(totalValuePos>maxValue) {
+        maxValue = totalValuePos;
+      }
+      if(totalValueNeg<minValue) {
+        minValue = totalValueNeg;
+      }
+    }
+    if(-minValue>maxValue) {
+      maxValue=-minValue;
+    }
 
     let datasetLine3 = [];      
     if(combinedChart===true) {
@@ -94,7 +123,8 @@ class StackedBarChart extends React.Component {
     ];
 
     return (
-      <div>
+	  <NamespacesConsumer>{t =>
+        <div>
         <VictoryChart
           domainPadding={20}
           width={380}
@@ -116,7 +146,14 @@ class StackedBarChart extends React.Component {
             axisLabelComponent={<VictoryLabel dx={120}/>}
             key={2}
             offsetX={80}
-            tickFormat={(t) => (t*this.props.maxY/this.props.divideValues)}
+            tickFormat={
+              (t) => {
+                if(isNaN(maxValue)) {
+                  return 0;
+                }
+                return Math.round(t*maxValue/this.props.divideValues,0)
+              }
+            }
             tickValues={[-0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75]}
             label={this.props.label}
           />
@@ -148,7 +185,7 @@ class StackedBarChart extends React.Component {
             colorScale = {colors}
             data={dataset3.map(
               (chartGroup, i) => (
-                { name: chartGroup.indicatorGroup.concat("        ").substr(0,16), fill: colors[i] }
+                { name:  t('legend.' + chartGroup.indicatorGroup).concat("        ").substr(0,16), fill: colors[i] }
               )
             )}
             labelComponent={<VictoryLabel style={{fontSize: '9px'}}/>}
@@ -163,12 +200,12 @@ class StackedBarChart extends React.Component {
                     data={chartGroup.indicatorGroupValues.map(
                       chartGroupValue => (
                         {...chartGroupValue, 
-                          label: 'Difference: ' + chartGroup.indicatorGroup + ': ' +
+                          label: t('misc.Difference') + ': ' + t('legend.' + chartGroup.indicatorGroup) + ': ' +
                           (chartGroupValue.total/this.props.divideValues).toFixed(2) }
                       )
                     )}
                     x='year'
-                    y={(datum) => datum['total'] / this.props.maxY}
+                    y={(datum) => datum['total'] / maxValue}
                     labelComponent={<VictoryTooltip/>}
                     style={{
                       data: {fill: colors[i]}
@@ -201,6 +238,7 @@ class StackedBarChart extends React.Component {
           }
           </VictoryChart>
       </div>
+	 }</NamespacesConsumer>
     )
   }
 }
@@ -215,10 +253,10 @@ StackedBarChart.propTypes = {
   chartName: PropTypes.string.isRequired,
   chartTitle: PropTypes.string.isRequired,
   combinedChart: PropTypes.bool.isRequired,
-  minY: PropTypes.string.isRequired,
-  maxY: PropTypes.string.isRequired,
-  minY2: PropTypes.string,
-  maxY2: PropTypes.string,  
+  minY: PropTypes.number.isRequired,
+  maxY: PropTypes.number.isRequired,
+  minY2: PropTypes.number,
+  maxY2: PropTypes.number,  
   label: PropTypes.string.isRequired,
   divideValues: PropTypes.number,
   label2: PropTypes.string,
