@@ -18,6 +18,19 @@
     "assumptions": "Assumptions",
     "subscribe": "Questions"
   },
+  "misc": {
+	"Difference":"Difference",
+	"RE-share":"Renewable share"
+  },
+  "units": {
+	"Mt":"Mt",
+	"ktoe":"ktoe",
+	"mtoe":"mtoe",
+	"BkWh":"Billion kWh",
+	"BEuro":"Billion Euro",
+	"GW":"GW",
+	"PJ":"PJ"
+  },
   "tabs": {
     "main-results": "Main results",
     "tab2": "Electricity and heat",

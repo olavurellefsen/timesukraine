@@ -30,20 +30,20 @@ const Charts = (props) => {
         {(props.scenarioSelection.showWelcome === true) && <Welcome closeWelcome={props.closeWelcome} />}
         {(props.scenarioSelection.showDifference === false || (props.scenarioSelection.showDifference === true && selectedScenario2 === "")) &&
           <Flex>
-		    <StackedBarChart chartName='web2_All Electricity Productio' chartTitle={t('chart-titles.electric-production-incl-import')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Billion Kwh' minY={0} maxY={400} />
-           	<StackedBarChart chartName='web2_All Electricity Capacity ' chartTitle={t('chart-titles.all-electric-capacity')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='GW' minY={0} maxY={160} />
-            <StackedBarChart chartName='web2_All Electricity NEW Capac' chartTitle={t('chart-titles.new-capacity')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='GW' minY={0} maxY={40} />
-            <StackedBarChart chartName='web2_Renewables Electricity Pr' chartTitle={t('chart-titles.electricity-from-renewables')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Billion Kwh' minY={0} maxY={180} />
-            <StackedBarChart chartName='web2_HEAT Production All types' chartTitle={t('chart-titles.heat-production')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='PJ' minY={0} maxY={800} />
+		    <StackedBarChart chartName='web2_All Electricity Productio' chartTitle={t('chart-titles.electric-production-incl-import')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label={t('units.BkWh')} minY={0} maxY={400} />
+           	<StackedBarChart chartName='web2_All Electricity Capacity ' chartTitle={t('chart-titles.all-electric-capacity')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label={t('units.GW')} minY={0} maxY={160} />
+            <StackedBarChart chartName='web2_All Electricity NEW Capac' chartTitle={t('chart-titles.new-capacity')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label={t('units.GW')} minY={0} maxY={40} />
+            <StackedBarChart chartName='web2_Renewables Electricity Pr' chartTitle={t('chart-titles.electricity-from-renewables')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label={t('units.BkWh')} minY={0} maxY={180} />
+            <StackedBarChart chartName='web2_HEAT Production All types' chartTitle={t('chart-titles.heat-production')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label={t('units.PJ')} minY={0} maxY={800} />
           </Flex>
         }
         {(props.scenarioSelection.showDifference === true && selectedScenario2 !== "") &&
           <Flex>
-            <StackedBarDiffChart chartName='web2_All Electricity Productio' chartTitle={t('chart-titles.electric-production-incl-import')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Billion Kwh' minY={-300} maxY={300} />
-			<StackedBarDiffChart chartName='web2_All Electricity Capacity ' chartTitle={t('chart-titles.all-electric-capacity')}  selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='GW' minY={-100} maxY={100} />
-            <StackedBarDiffChart chartName='web2_All Electricity NEW Capac' chartTitle={t('chart-titles.new-capacity')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='GW' minY={-30} maxY={30} />            
-            <StackedBarDiffChart chartName='web2_Renewables Electricity Pr' chartTitle={t('chart-titles.electricity-from-renewables')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='Billion Kwh' minY={-120} maxY={120} />
-			<StackedBarDiffChart chartName='web2_HEAT Production All types' chartTitle={t('chart-titles.heat-production')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label='PJ' minY={-12000} maxY={12000} />
+            <StackedBarDiffChart chartName='web2_All Electricity Productio' chartTitle={t('chart-titles.electric-production-incl-import')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label={t('units.BkWh')} minY={-300} maxY={300} />
+			<StackedBarDiffChart chartName='web2_All Electricity Capacity ' chartTitle={t('chart-titles.all-electric-capacity')}  selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label={t('units.GW')} minY={-100} maxY={100} />
+            <StackedBarDiffChart chartName='web2_All Electricity NEW Capac' chartTitle={t('chart-titles.new-capacity')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label={t('units.GW')} minY={-30} maxY={30} />            
+            <StackedBarDiffChart chartName='web2_Renewables Electricity Pr' chartTitle={t('chart-titles.electricity-from-renewables')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label={t('units.BkWh')} minY={-120} maxY={120} />
+			<StackedBarDiffChart chartName='web2_HEAT Production All types' chartTitle={t('chart-titles.heat-production')} selectedScenario={selectedScenario} selectedScenario2={selectedScenario2} combinedChart={false} label={t('units.PJ')} minY={-12000} maxY={12000} />
           </Flex>
         }
       </MainArea>
