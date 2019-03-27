@@ -33,18 +33,6 @@ const AboutBody = styled.p`
     font-size: 0.7em;
   `}  
   `
-const AboutList = styled.ul`
-  font-size: 1em;
-  ${breakpoint('mobile','desktop')`
-    font-size: 0.7em;
-  `}  
-  `
-const ListItem = styled.li`
-  font-size: 1em;
-  ${breakpoint("mobile", "desktop")`
-    font-size: 0.7em;
-  `}
-  `
   
 export default () => (
   <AboutContainer>
