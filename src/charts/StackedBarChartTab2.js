@@ -126,7 +126,7 @@ class StackedBarChart extends React.Component {
                         chartGroupValue => (
                           {
                             ...chartGroupValue,
-                            label: chartGroup.indicatorGroup + ': ' +
+                            label: t('legend.' + chartGroup.indicatorGroup) + ': ' +
                               (chartGroupValue.total / this.props.divideValues).toFixed(2)
                           }
                         )
@@ -153,7 +153,7 @@ class StackedBarChart extends React.Component {
                           chartGroupValue => (
                             {
                               ...chartGroupValue,
-                              label: chartGroup.indicatorGroup +
+                              label: t('legend.' + chartGroup.indicatorGroup) +
                                 ': ' + (chartGroupValue.total / this.props.divideValues).toFixed(2)
                             }
                           )

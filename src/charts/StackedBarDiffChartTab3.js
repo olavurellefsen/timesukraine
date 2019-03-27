@@ -200,7 +200,7 @@ class StackedBarChart extends React.Component {
                     data={chartGroup.indicatorGroupValues.map(
                       chartGroupValue => (
                         {...chartGroupValue, 
-                          label: 'Difference: ' + chartGroup.indicatorGroup + ': ' +
+                          label: 'Difference: ' + t('legend.' + chartGroup.indicatorGroup) + ': ' +
                           (chartGroupValue.total/this.props.divideValues).toFixed(2) }
                       )
                     )}
