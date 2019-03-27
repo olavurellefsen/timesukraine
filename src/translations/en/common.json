@@ -11,6 +11,12 @@
     "scenario-difference": "Scenario difference",
     "online-version-from-tokni": "Online version from Tokni"
   },
+  "tool": {
+    "text":"The information and results hereby represented are results of “Long-Term Energy Modelling and Forecasting in Ukraine: Scenarios for the Action Plan of Energy Strategy of Ukraine until 2035” project."
+  }, 
+  "more": {
+    "text": "Please send your questions, suggestions or recommendations to: timesukraine@gmail.com"
+  },
   "mobile-menu": {
     "about": "Tool",
     "descriptions": "Scenarios",

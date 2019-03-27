@@ -64,7 +64,7 @@ export class App extends React.Component {
       scenarioSelection: "UDEC_N_PAETT0N_0000I_00-v01",
       scenarioSelection2: "",
       showWelcome: true,
-      showDisclaimer: true,
+      showDisclaimer: false,
       showDifference: false
     }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
