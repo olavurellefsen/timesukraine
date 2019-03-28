@@ -39,7 +39,7 @@ const MenuHeaderLeft = styled.div`
   flex-direction: column;
   `;
 
-  const MenuHeaderRight = styled.div`
+const MenuHeaderRight = styled.div`
   padding: 0 12px 5px 0px;
   margin: 0;
   display: flex;
