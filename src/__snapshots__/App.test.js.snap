@@ -123,7 +123,7 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb gHgFix"
                 value="UDEC_N_PAETT0N_0000I_00-v01"
               >
-                Reference
+                посилання
               </div>
               <div
                 class="sc-bxivhb kTDhsF"
@@ -305,37 +305,37 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb jAnrSK"
                 value="UDEC_N_PAETT0N_0000I_00-v01"
               >
-                Reference
+                посилання
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PAETT00_L000I_00-v01"
               >
-                -Low RE
+                - Low RE
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PAETT00_N000I_00-v01"
               >
-                -Nuclear
+                - Nuclear
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PEETT0N_B0000_00-v01"
               >
-                -New Techs
+                - New Techs
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PCETT0N_00000_00-v01"
               >
-                -GC Paradox
+                - GC Paradox
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PEETT0N_F0000_00-v01"
               >
-                -Balancing
+                - Balancing
               </div>
               <hr
                 class="sc-ifAKCX dMqCcT"
@@ -350,7 +350,7 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PEETT0N_F0000_LC-v01"
               >
-                -Low Carbon
+                Low Carbon
               </div>
             </div>
           </div>
