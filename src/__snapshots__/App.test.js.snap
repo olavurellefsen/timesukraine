@@ -214,72 +214,76 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-hMqMXs iVRWzF"
+          class="sc-hMqMXs jzHvqM"
         >
           <img
             alt="logo"
             class="sc-kEYyzF kxiOJT"
             src="./images/dtulogo_white.png"
           />
+          <img
+            class="sc-kkGfuU jqYACB"
+            src="images/times-ukraine-modellers.gif"
+          />
           <a
-            class="sc-kkGfuU kHPdoL"
+            class="sc-iAyFgw gNThxd"
             href="/"
           >
             TIMES-Україна
           </a>
           <div
-            class="sc-iAyFgw fCiKEF"
+            class="sc-hSdWYo kbbpYK"
           >
             <button
-              class="sc-hSdWYo kngpRj"
+              class="sc-eHgmQL bjxCqC"
             >
               UK
             </button>
             <button
-              class="sc-hSdWYo kngpRj"
+              class="sc-eHgmQL bjxCqC"
             >
               EN
             </button>
           </div>
           <div
-            class="sc-cvbbAY idIqFM"
+            class="sc-jWBwVP cqGHCt"
           >
             <a
-              class="sc-jWBwVP imJIpG"
+              class="sc-brqgnP iKaLZw"
               href="/about"
             >
               Інструмент
             </a>
             <a
-              class="sc-jWBwVP imJIpG"
+              class="sc-brqgnP iKaLZw"
               href="/descriptions"
             >
               Сценарії
             </a>
             <a
-              class="sc-jWBwVP imJIpG"
+              class="sc-brqgnP iKaLZw"
               href="/recommendations"
             >
               Висновки
             </a>
             <a
-              class="sc-jWBwVP imJIpG"
+              class="sc-brqgnP iKaLZw"
               href="/assumptions"
             >
               Припущення
             </a>
             <a
-              class="sc-jWBwVP imJIpG"
+              class="sc-brqgnP iKaLZw"
               href="/subscribe"
             >
               Питання
             </a>
           </div>
           <hr
-            class="sc-eHgmQL fMnKgj"
+            class="sc-cvbbAY hpfNGs"
           />
           <div
-            class="sc-brqgnP jJUwIm"
+            class="sc-cMljjf hHaptQ"
           >
             <div
               class="sc-bdVaJa donHvk"
@@ -355,10 +359,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-eHgmQL fMnKgj"
+            class="sc-cvbbAY hpfNGs"
           />
           <div
-            class="sc-cMljjf kjYBvj"
+            class="sc-jAaTju itmnbc"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -372,26 +376,22 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-jAaTju iNSLDB"
+              class="sc-jDwBTQ djyeaN"
             >
               Різниця
             </div>
           </div>
           <hr
-            class="sc-eHgmQL fMnKgj"
+            class="sc-cvbbAY hpfNGs"
           />
           <div
-            class="sc-jDwBTQ eOMvmH"
+            class="sc-gPEVay kIhtM"
           >
-            <img
-              class="sc-jlyJG flkUAi"
-              src="images/times-ukraine-modellers.gif"
-            />
             <div
-              class="sc-gPEVay cbJsKM"
+              class="sc-iRbamj gpimdW"
             >
               <a
-                class="sc-iRbamj leGuxO"
+                class="sc-jlyJG cMYNOQ"
                 href="http://www.tokni.com"
               >
                 Онлайн версія від Tokni
