@@ -114,7 +114,7 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb kTDhsF"
                 value="UDEC_N_0A00000_00000_00-v01"
               >
-                Frozen Policy
+                Бездієвий
               </div>
               <hr
                 class="sc-ifAKCX dMqCcT"
@@ -123,37 +123,37 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb gHgFix"
                 value="UDEC_N_PAETT0N_0000I_00-v01"
               >
-                посилання
+                Базовий
               </div>
               <div
                 class="sc-bxivhb kTDhsF"
                 value="UDEC_N_PAETT00_L000I_00-v01"
               >
-                - Low RE Growth
+                - Низьке зростання ВДЕ
               </div>
               <div
                 class="sc-bxivhb kTDhsF"
                 value="UDEC_N_PAETT00_N000I_00-v01"
               >
-                - No New Nuclear in 2025
+                - Без нових реакторів у 2025
               </div>
               <div
                 class="sc-bxivhb kTDhsF"
                 value="UDEC_N_PEETT0N_B0000_00-v01"
               >
-                - New Balancing Techs
+                - Нові техн. балансування
               </div>
               <div
                 class="sc-bxivhb kTDhsF"
                 value="UDEC_N_PCETT0N_00000_00-v01"
               >
-                - Green-Coal Paradox
+                - Зелено-вугільний парадокс
               </div>
               <div
                 class="sc-bxivhb kTDhsF"
                 value="UDEC_N_PEETT0N_F0000_00-v01"
               >
-                - Optimise Balancing
+                - Оптимізація балансування
               </div>
               <hr
                 class="sc-ifAKCX dMqCcT"
@@ -162,13 +162,13 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb kTDhsF"
                 value="UDEC_N_PEETT0N_F0000_NS-v02"
               >
-                National Strategies
+                Національні стратегії
               </div>
               <div
                 class="sc-bxivhb kTDhsF"
                 value="UDEC_N_PEETT0N_F0000_LC-v01"
               >
-                Low Carbon Society
+                Низьковуглецеве суспільство
               </div>
             </div>
           </div>
@@ -300,7 +300,7 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_0A00000_00000_00-v01"
               >
-                Frozen Policy
+                Бездієвий
               </div>
               <hr
                 class="sc-ifAKCX dMqCcT"
@@ -309,37 +309,37 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb jAnrSK"
                 value="UDEC_N_PAETT0N_0000I_00-v01"
               >
-                посилання
+                Базовий
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PAETT00_L000I_00-v01"
               >
-                - Low RE
+                - Низьке ВДЕ
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PAETT00_N000I_00-v01"
               >
-                - Nuclear
+                - Реактори
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PEETT0N_B0000_00-v01"
               >
-                - New Techs
+                - Нові техн.
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PCETT0N_00000_00-v01"
               >
-                - GC Paradox
+                - ЗВ парадокс
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PEETT0N_F0000_00-v01"
               >
-                - Balancing
+                - Балансування
               </div>
               <hr
                 class="sc-ifAKCX dMqCcT"
@@ -348,13 +348,13 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PEETT0N_F0000_NS-v02"
               >
-                -UA-Strategies
+                Стратегії
               </div>
               <div
                 class="sc-bxivhb jazOiW"
                 value="UDEC_N_PEETT0N_F0000_LC-v01"
               >
-                Low Carbon
+                Низьковуглецевий
               </div>
             </div>
           </div>

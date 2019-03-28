@@ -49,13 +49,13 @@ const MenuHeader =  styled(Link)`
 const LanguageGroup = styled.div`
   display: flex;
   flex-direction: row;
-  margin-left: 0px;
-  margin-top: 10px;
+  margin: 10px 0px 0px 0px;
   `;
 
 const LanguageButton = styled.button`
+  padding: 0px;
   margin-right: 2px;
-  color: white;
+  color: black;
   `; 
 
 const MenuSeparatorLine  = styled.hr`
