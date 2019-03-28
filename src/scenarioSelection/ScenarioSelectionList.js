@@ -1,16 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { Trans, withNamespaces } from 'react-i18next';
 
 const ScenarioList = styled.div`
   display: flex;
   flex-wrap: wrap;
   `;
-  ScenarioList.displayName = 'ScenarioList';
+
 const ScenarioDivider = styled.div`
   height: 5px;
   `
-  ScenarioDivider.displayName = 'ScenarioDivider';
+
 const ScenarioHeader = styled.div`
   font-size: ${props => (props.narrowVersion ? '0.9em' : '1em')};
   padding: ${props => (props.narrowVersion ? '5px' : '0 12px 0 15px')};
@@ -20,7 +21,7 @@ const ScenarioHeader = styled.div`
   display: flex;
   align-items: center;
   `;
-  ScenarioHeader.displayName = 'ScenarioHeader';
+
 const ScenarioOption = styled.div`
   font-size: ${props => (props.narrowVersion ? '0.7em' : '0.9em')};
   display: flex;
@@ -41,14 +42,13 @@ const ScenarioOption = styled.div`
     }
   }
   `;
-  ScenarioOption.displayName = 'ScenarioOption';
+
 const MenuSeparatorLine  = styled.hr`
   margin: 0.25em 12px 0.25em 15px;
   border-color: #555;
   border-width: 1px;
   width: 100%;
   `;
-  MenuSeparatorLine.displayName = 'MenuSeparatorLine';
 
 class ScenarioSelectionList extends React.Component {
 
@@ -76,8 +76,8 @@ class ScenarioSelectionList extends React.Component {
               onClick={(event) => this.handleChange(event, optionValue)}
               narrowVersion={narrowVersion}
             >
-              {narrowVersion===false && option.short_description}
-              {narrowVersion===true && option.ultra_short_description}
+              {narrowVersion===false && <Trans i18nKey={'scenario-short-description.'+option.id} />}
+              {narrowVersion===true && <Trans i18nKey={'scenario-ultra-short-description.'+option.id} />}
             </ScenarioOption>
           )
         }
@@ -102,4 +102,4 @@ ScenarioSelectionList.propTypes = {
   narrowVersion: PropTypes.bool.isRequired
 }
 
-export default ScenarioSelectionList;
+export default withNamespaces('common')(ScenarioSelectionList);

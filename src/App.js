@@ -13,11 +13,7 @@ import ChartsTab3 from './charts/ChartsTab3'
 import ChartsTab4 from './charts/ChartsTab4'
 import ChartsTab5 from './charts/ChartsTab5'
 import ChartsTab6 from './charts/ChartsTab6'
-import About from './pages/About'
-import ScenarioDescriptions from './pages/ScenarioDescriptions'
-import Recommendations from './pages/Recommendations'
-import Assumptions from './pages/Assumptions'
-import GetUpdates from './pages/GetUpdates'
+import Pages from './pages/pages';
 import scenarioCombinations from './data/scenarioCombinations'
 import { withNamespaces } from 'react-i18next';
 
@@ -116,12 +112,14 @@ export class App extends React.Component {
                 scenarioCombinations={this.scenarioCombinations}
                 updateScenarioSelection={this.UpdateScenarioSelection}
                 toggleDifference={this.ToggleDifference}
+                selectedChartgroup={this.props.location.pathname}
               />
               <LeftMenuMobile
                 scenarioSelection={this.state}
                 scenarioCombinations={this.scenarioCombinations}
                 updateScenarioSelection={this.UpdateScenarioSelection}
                 toggleDifference={this.ToggleDifference}
+                selectedChartgroup={this.props.location.pathname}
               />
             </Content>
           </LeftColumn>
@@ -154,11 +152,11 @@ export class App extends React.Component {
                   scenarioSelection={this.state}
                   closeWelcome={this.CloseWelcomeWidget}
                 />}/>                                                       
-                <Route path='/about' component={About} />
-                <Route path='/descriptions' component={ScenarioDescriptions} />
-                <Route path='/recommendations' component={Recommendations} />
-                <Route path='/assumptions' component={Assumptions} />
-                <Route path='/subscribe' component={GetUpdates} />
+                <Route path='/about' render={(props) => <Pages pageToShow="About" />} />
+                <Route path='/descriptions' render={(props) => <Pages pageToShow="ScenarioDescriptions" />} />
+                <Route path='/recommendations' render={(props) => <Pages pageToShow="Recommendations" />} />
+                <Route path='/assumptions' render={(props) => <Pages pageToShow="Assumptions" />} />
+                <Route path='/subscribe' render={(props) => <Pages pageToShow="GetUpdates" />} />
               </MainSwitch>
             </Content>
           </RightColumn>

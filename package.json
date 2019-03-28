@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
     "i18next": "^12.1.0",
     "merge": "^1.2.1",
     "prop-types": "^15.6.1",
@@ -12,9 +10,10 @@
     "react-dom": "^16.3.2",
     "react-ga": "^2.5.0",
     "react-i18next": "^8.3.8",
+    "react-markdown": "^4.0.6",
     "react-octicon": "^3.0.1",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "^2.1.5",
+    "react-scripts": "^2.1.8",
     "styled-components": "^3.2.6",
     "styled-components-breakpoint": "^2.0.2",
     "typeface-roboto": "0.0.54",
@@ -31,5 +30,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "jest-dom": "^3.1.3",
+    "react-testing-library": "^6.0.3"
+  }
 }
