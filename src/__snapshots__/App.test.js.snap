@@ -48,12 +48,12 @@ exports[`should render correctly 1`] = `
               class="sc-jzJRlG jjwGzH"
             >
               <button
-                class="sc-cSHVUG heQBFK"
+                class="sc-cSHVUG hxNqwi"
               >
                 UK
               </button>
               <button
-                class="sc-cSHVUG heQBFK"
+                class="sc-cSHVUG jmaipt"
               >
                 EN
               </button>
