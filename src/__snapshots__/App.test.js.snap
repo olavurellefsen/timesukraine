@@ -3,13 +3,13 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="sc-gwVKww hFzIzh"
+    class="sc-cmTdod izRjhK"
   >
     <div
-      class="sc-hXRMBi iJvSsm"
+      class="sc-jwKygS kpakFr"
     >
       <div
-        class="sc-iQNlJl caflaG"
+        class="sc-lhVmIH dHdcNG"
       >
         <div
           class="sc-htoDjs bLeWKd"
@@ -48,12 +48,12 @@ exports[`should render correctly 1`] = `
               class="sc-jzJRlG jjwGzH"
             >
               <button
-                class="sc-cSHVUG heQBFK"
+                class="sc-cSHVUG hxNqwi"
               >
                 UK
               </button>
               <button
-                class="sc-cSHVUG heQBFK"
+                class="sc-cSHVUG jmaipt"
               >
                 EN
               </button>
@@ -402,10 +402,10 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-epnACN hPcphl"
+      class="sc-btzYZH leMept"
     >
       <div
-        class="sc-iQNlJl caflaG"
+        class="sc-lhVmIH dHdcNG"
       >
         <div
           class="sc-gipzik cQysqs"

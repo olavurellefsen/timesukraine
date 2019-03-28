@@ -39,7 +39,7 @@ const MenuHeaderLeft = styled.div`
   flex-direction: column;
   `;
 
-  const MenuHeaderRight = styled.div`
+const MenuHeaderRight = styled.div`
   padding: 0 12px 5px 0px;
   margin: 0;
   display: flex;
@@ -94,6 +94,9 @@ const LanguageGroup = styled.div`
 
 const LanguageButton = styled.button`
   margin-right: 5px;
+  cursor: pointer;
+  font-weight: ${props => (props.selected ? 'bold' : 'normal')};
+  box-shadow: ${props => (props.selected ? '0 3px 5px gray': 'normal')}
   `; 
 
 const MenuSeparatorLine  = styled.hr`
@@ -190,8 +193,8 @@ export class ScenarioSelectionMenu extends React.Component {
             <Trans i18nKey='main-menu.times-ukraine' />
             </MenuTitle>
             <LanguageGroup>
-              <LanguageButton onClick={() => i18n.changeLanguage('uk')}>UK</LanguageButton>
-              <LanguageButton onClick={() => i18n.changeLanguage('en')}>EN</LanguageButton>
+              <LanguageButton selected={i18n.languages[0]==='uk'} onClick={() => i18n.changeLanguage('uk')}>UK</LanguageButton>
+              <LanguageButton selected={i18n.languages[0]==='en'} onClick={() => i18n.changeLanguage('en')}>EN</LanguageButton>
             </LanguageGroup>
             <MenuRoutes>
               <MenuItem to='/about' selected={this.props.selectedChartgroup==='/about'}><Trans i18nKey='main-menu.about-the-tool' /></MenuItem>
