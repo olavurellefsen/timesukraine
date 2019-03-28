@@ -1,0 +1,2 @@
+# About
+The information and results hereby represented are results of “Long-Term Energy Modelling and Forecasting in Ukraine: Scenarios for the Action Plan of Energy Strategy of Ukraine until 2035” project.

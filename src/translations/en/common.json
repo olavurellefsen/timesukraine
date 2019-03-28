@@ -11,12 +11,32 @@
     "scenario-difference": "Scenario difference",
     "online-version-from-tokni": "Online version from Tokni"
   },
-  "tool": {
-    "text":"The information and results hereby represented are results of “Long-Term Energy Modelling and Forecasting in Ukraine: Scenarios for the Action Plan of Energy Strategy of Ukraine until 2035” project."
-  }, 
-  "more": {
-    "text": "Please send your questions, suggestions or recommendations to: timesukraine@gmail.com"
+  "scenario-short-description": {
+    "0": "Frozen Policy",
+    "1": "_______________",
+    "2": "Reference",
+    "3": "- Low RE Growth",
+    "4": "- No New Nuclear in 2025",
+    "5": "- New Balancing Techs",
+    "6": "- Green-Coal Paradox",
+    "7": "- Optimise Balancing",
+    "8": "_______________",
+    "9": "National Strategies",
+    "10": "Low Carbon Society"
   },
+  "scenario-ultra-short-description": {
+    "0": "Frozen Policy",
+    "1": "_______________",
+    "2": "Reference",
+    "3": "- Low RE",
+    "4": "- Nuclear",
+    "5": "- New Techs",
+    "6": "- GC Paradox",
+    "7": "- Balancing",
+    "8": "_______________",
+    "9": "UA-Strategies",
+    "10": "Low Carbon"
+  },      
   "mobile-menu": {
     "about": "Tool",
     "descriptions": "Scenarios",

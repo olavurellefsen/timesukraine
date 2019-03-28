@@ -14,50 +14,57 @@ const MenuLayout = styled.div`
     min-height: 100vh;
     flex-direction: column;
     flex-shrink: 0;
+    align-items: center;
     width: 80px;
     color: white;
     background: rgb(50, 50, 50);
     visibility: visible;
   `}
   `;
-  MenuLayout.displayName = 'MenuLayout';
+
 const AppLogo  = styled.img`
   width: 45px;
   height: 67px;
   margin: 5px;
   border: 0;
   `;
-  AppLogo.displayName = 'AppLogo';  
+
+const ModelersLogo  = styled.img`
+  width: 65px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  margin-bottom: 10px;
+  `;
+
 const MenuHeader =  styled(Link)`
   padding: 5px;
   margin: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: top;
+  text-align: center;
   text-decoration: none;
   color:white;
   `;
-  MenuHeader.displayName = 'MenuHeader';
+
 const LanguageGroup = styled.div`
   display: flex;
   flex-direction: row;
   margin-left: 0px;
   margin-top: 10px;
   `;
-  LanguageGroup.displayName = 'LanguageGroup';
+
 const LanguageButton = styled.button`
   margin-right: 2px;
   color: white;
   `; 
-  LanguageButton.displayName='LanguageButton';  
+
 const MenuSeparatorLine  = styled.hr`
   margin: 0.25em 12px 0.25em 5px;
   border-color: #555;
   border-width: 1px;
   width: 100hh;
   `;
-  MenuSeparatorLine.displayName = 'MenuSeparatorLine';
+
 const MenuRoutes  = styled.div`
   padding: 5px;
   margin: 0;
@@ -66,30 +73,27 @@ const MenuRoutes  = styled.div`
   flex-direction: column;
   align-items: center;
   `;
-  MenuRoutes.displayName = 'MenuRoutes';
+
 const MenuItem  = styled(Link)`
   font-weight: ${props => (props.selected ? 'bold' : 'normal')};
   font-size: 0.7em;
-  margin: 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin: 5px;
   width: 100%;
-  display: flex;
-  align-items: center;
   color: ${props => (props.selected ? 'yellow' : 'inherit')};
+  text-align: center;
   text-decoration: none;
   :hover {
     text-decoration: underline;
     cursor: pointer;
   }
   `;
-  MenuItem.displayName = 'MenuItem';
+
 const ScenarioSelection  = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   `;
-  ScenarioSelection.displayName = 'ScenarioSelection';
+
 const ToggleDifference = styled.div`
   padding: 5px;
   display: flex;
@@ -97,13 +101,13 @@ const ToggleDifference = styled.div`
   align-content:center;
   flex-direction: column;
   `;
-  ToggleDifference.displayName = 'ToggleDifference';
+
 const ToggleSwitchText = styled.div`
   font-size: 0.7em;
   color: ${props => (props.singleMode ? 'gray' : props.selected ? '#2196F3' : 'white')};
   margin-top: 5px;
   `;
-  ToggleSwitchText.displayName = 'ToggleSwitchText';
+
 const MenuFooter  = styled.div`
   padding: 5px;
   margin: 0;
@@ -112,14 +116,15 @@ const MenuFooter  = styled.div`
   flex-direction: column;
   align-items: center;
   `;
-  MenuFooter.displayName = 'MenuFooter';
+
 const CopyrightNotice = styled.div`
   font-size: 0.7em;
   padding: 5px;
   margin: 0;
   width: 100%;
+  text-align: center;
   `;
-  CopyrightNotice.displayName = 'CopyrightNotice';
+
 const ExternalLink = styled.a`
   color: white;
   text-decoration: none;
@@ -127,16 +132,6 @@ const ExternalLink = styled.a`
     text-decoration: underline;
   }
   `;
-  ExternalLink.displayName = 'ExternalLink';
-const ModelersLogo  = styled.img`
-  align-self: flex-start;
-  width: 65px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
-  margin-bottom: 10px;
-  `;
-ModelersLogo.displayName = 'ModelersLogo';  
 
 export class ScenarioSelectionMenu extends React.Component {
 
@@ -145,6 +140,7 @@ export class ScenarioSelectionMenu extends React.Component {
     return (
       <MenuLayout>
         <AppLogo src='./images/dtulogo_white.png' alt='logo'/>
+        <ModelersLogo src='images/times-ukraine-modellers.gif' />
         <MenuHeader to='/'>
           <Trans i18nKey='main-menu.times-ukraine' />
         </MenuHeader>
@@ -184,7 +180,6 @@ export class ScenarioSelectionMenu extends React.Component {
         </ToggleDifference>
         <MenuSeparatorLine />        
         <MenuFooter>
-          <ModelersLogo src='images/times-ukraine-modellers.gif' />
           <CopyrightNotice>
             <ExternalLink href='http://www.tokni.com'><Trans i18nKey='main-menu.online-version-from-tokni' /></ExternalLink>
           </CopyrightNotice>

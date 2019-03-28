@@ -1,0 +1,11 @@
+# Scenario Descriptions
+
+**_Reference_**  scenario considers the optimal development of the energy system of Ukraine under the goals of ESU2035. It is based on the targets specified in the strategy, including:
+* Energy efficiency of GDP; 
+* Renewable share of TPES; 
+* Minimum renewable share of electricity;
+* Addition of 1GW nuclear power in 2025.
+
+A few sensitivity scenarios assess possible deviations from the targets or influence of alternative sets of technologies. **_Low Renewable Growth_** scenario assumes future low development of renewable energy as in UkrEnergo’s development pathways for hydro, wind and solar power generation. **_No New Nuclear in 2025_** analyses the effects of a delay until at least 2030 of the new nuclear power generation capacity. In the scenario **_New Balancing Techs_**, new technologies that can provide balancing under increasing share of renewable generation are considered; while **_Green-Coal Paradox_** focuses on the effects of refurbishment of the existing coal-based thermal units to extend their lifetime and use them for balancing instead. **_Optimise Balancing_** provides insights into the effects a forecasting system (and a reduced balancing requirement) could have. 
+
+Additional scenarios put the goals of ESU2035 into a wider context (both national and international). **_National Strategies_** adds other national targets and measures from strategic documents (National transport strategy of Ukraine till 2030; National Strategy for Waste Management in Ukraine till 2030; Concept of realization of the state policy of heat supply; and Ukraine 2050 Low Emission Development Strategy) in addition to ESU2035. **_Low Carbon Society_** further expands the previous scenario by considering a path to an 80% GHG emission reduction for Ukraine in 2050. This scenario is closer to the climate mitigation policy adopted in the EU. **_Frozen Policy_** takes into account only those policies, measures and targets that were adopted until 2015 (i.e. no policies, measures and targets from ESU2035 and other strategic documents) and is provided for comparison purposes.
