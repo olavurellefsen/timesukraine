@@ -3,13 +3,13 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="sc-eTuwsz iNWSrP"
+    class="sc-gwVKww hFzIzh"
   >
     <div
-      class="sc-gwVKww hDAaYk"
+      class="sc-hXRMBi iJvSsm"
     >
       <div
-        class="sc-epnACN eYpZlH"
+        class="sc-iQNlJl caflaG"
       >
         <div
           class="sc-htoDjs bLeWKd"
@@ -20,76 +20,84 @@ exports[`should render correctly 1`] = `
             <div
               class="sc-iwsKbI bLepPS"
             >
-              <a
-                class="sc-VigVT kABcje"
-                href="/"
-              >
-                TIMES-Україна
-              </a>
-              <div
-                class="sc-jTzLTM ciNugT"
-              >
-                <button
-                  class="sc-fjdhpX khepGl"
-                >
-                  UK
-                </button>
-                <button
-                  class="sc-fjdhpX khepGl"
-                >
-                  EN
-                </button>
-              </div>
-              <div
-                class="sc-cSHVUG epMMxz"
-              >
-                <a
-                  class="sc-kAzzGY bUsHLx"
-                  href="/about"
-                >
-                  Про інструмент
-                </a>
-                <a
-                  class="sc-kAzzGY bUsHLx"
-                  href="/descriptions"
-                >
-                  Опис сценаріїв
-                </a>
-                <a
-                  class="sc-kAzzGY bUsHLx"
-                  href="/recommendations"
-                >
-                  Висновки
-                </a>
-                <a
-                  class="sc-kAzzGY bUsHLx"
-                  href="/assumptions"
-                >
-                  Припущення
-                </a>
-                <a
-                  class="sc-kAzzGY bUsHLx"
-                  href="/subscribe"
-                >
-                  Дізнатися більше
-                </a>
-              </div>
+              <img
+                alt="logo"
+                class="sc-gqjmRU cjjHtn"
+                src="./images/dtulogo_white.png"
+              />
             </div>
             <div
               class="sc-gZMcBi hDmUrN"
             >
               <img
-                alt="logo"
-                class="sc-gqjmRU hLOorg"
-                src="./images/dtulogo_white.png"
+                class="sc-VigVT jbRUpQ"
+                src="images/times-ukraine-modellers.gif"
               />
             </div>
           </div>
+          <div
+            class="sc-jTzLTM jOnzbm"
+          >
+            <a
+              class="sc-fjdhpX fCvQDI"
+              href="/"
+            >
+              TIMES-Україна
+            </a>
+            <div
+              class="sc-jzJRlG jjwGzH"
+            >
+              <button
+                class="sc-cSHVUG heQBFK"
+              >
+                UK
+              </button>
+              <button
+                class="sc-cSHVUG heQBFK"
+              >
+                EN
+              </button>
+            </div>
+            <div
+              class="sc-chPdSV iWEgRk"
+            >
+              <a
+                class="sc-kgoBCf imwzZa"
+                href="/about"
+              >
+                Про інструмент
+              </a>
+              <a
+                class="sc-kgoBCf imwzZa"
+                href="/descriptions"
+              >
+                Опис сценаріїв
+              </a>
+              <a
+                class="sc-kgoBCf imwzZa"
+                href="/recommendations"
+              >
+                Висновки
+              </a>
+              <a
+                class="sc-kgoBCf imwzZa"
+                href="/assumptions"
+              >
+                Припущення
+              </a>
+              <a
+                class="sc-kgoBCf imwzZa"
+                href="/subscribe"
+              >
+                Дізнатися більше
+              </a>
+            </div>
+          </div>
           <hr
-            class="sc-jzJRlG jUfpGp"
+            class="sc-kAzzGY dmGVCy"
           />
           <div
-            class="sc-chPdSV fBnSkX"
+            class="sc-kGXeez REnJV"
           >
             <div
               class="sc-bdVaJa donHvk"
@@ -165,10 +173,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-jzJRlG jUfpGp"
+            class="sc-kAzzGY dmGVCy"
           />
           <div
-            class="sc-kgoBCf hHHxET"
+            class="sc-kpOJdX jnKUCW"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -182,26 +190,22 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-kGXeez kcYcPm"
+              class="sc-dxgOiQ caFHYq"
             >
               Різниця
             </div>
           </div>
           <hr
-            class="sc-jzJRlG jUfpGp"
+            class="sc-kAzzGY dmGVCy"
           />
           <div
-            class="sc-kpOJdX JSrXx"
+            class="sc-ckVGcZ fVdwwM"
           >
-            <img
-              class="sc-jKJlTe kxLqyI"
-              src="images/times-ukraine-modellers.gif"
-            />
             <div
-              class="sc-dxgOiQ fXIiP"
+              class="sc-jKJlTe blFZcL"
             >
               <a
-                class="sc-ckVGcZ cIvOZS"
+                class="sc-eNQAEJ jwMbdz"
                 href="http://www.tokni.com"
               >
                 Онлайн версія від Tokni
@@ -210,72 +214,72 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-eNQAEJ iuGUSh"
+          class="sc-hMqMXs iVRWzF"
         >
           <img
             alt="logo"
-            class="sc-hMqMXs dCINDT"
+            class="sc-kEYyzF kxiOJT"
             src="./images/dtulogo_white.png"
           />
           <a
-            class="sc-kEYyzF GjwOO"
+            class="sc-kkGfuU kHPdoL"
             href="/"
           >
             TIMES-Україна
           </a>
           <div
-            class="sc-kkGfuU cdLJQl"
+            class="sc-iAyFgw fCiKEF"
           >
             <button
-              class="sc-iAyFgw hwDERM"
+              class="sc-hSdWYo kngpRj"
             >
               UK
             </button>
             <button
-              class="sc-iAyFgw hwDERM"
+              class="sc-hSdWYo kngpRj"
             >
               EN
             </button>
           </div>
           <div
-            class="sc-eHgmQL klZHEp"
+            class="sc-cvbbAY idIqFM"
           >
             <a
-              class="sc-cvbbAY hiwcUj"
+              class="sc-jWBwVP imJIpG"
               href="/about"
             >
               Інструмент
             </a>
             <a
-              class="sc-cvbbAY hiwcUj"
+              class="sc-jWBwVP imJIpG"
               href="/descriptions"
             >
               Сценарії
             </a>
             <a
-              class="sc-cvbbAY hiwcUj"
+              class="sc-jWBwVP imJIpG"
               href="/recommendations"
             >
               Висновки
             </a>
             <a
-              class="sc-cvbbAY hiwcUj"
+              class="sc-jWBwVP imJIpG"
               href="/assumptions"
             >
               Припущення
             </a>
             <a
-              class="sc-cvbbAY hiwcUj"
+              class="sc-jWBwVP imJIpG"
               href="/subscribe"
             >
               Питання
             </a>
           </div>
           <hr
-            class="sc-hSdWYo gCXPcr"
+            class="sc-eHgmQL fMnKgj"
           />
           <div
-            class="sc-jWBwVP gKgHiJ"
+            class="sc-brqgnP jJUwIm"
           >
             <div
               class="sc-bdVaJa donHvk"
@@ -351,10 +355,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-hSdWYo gCXPcr"
+            class="sc-eHgmQL fMnKgj"
           />
           <div
-            class="sc-brqgnP khTMbc"
+            class="sc-cMljjf kjYBvj"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -368,26 +372,26 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-cMljjf eHJzEG"
+              class="sc-jAaTju iNSLDB"
             >
               Різниця
             </div>
           </div>
           <hr
-            class="sc-hSdWYo gCXPcr"
+            class="sc-eHgmQL fMnKgj"
           />
           <div
-            class="sc-jAaTju cBiVDV"
+            class="sc-jDwBTQ eOMvmH"
           >
             <img
-              class="sc-iRbamj eAeRAd"
+              class="sc-jlyJG flkUAi"
               src="images/times-ukraine-modellers.gif"
             />
             <div
-              class="sc-jDwBTQ huIYbC"
+              class="sc-gPEVay cbJsKM"
             >
               <a
-                class="sc-gPEVay eUBFoi"
+                class="sc-iRbamj leGuxO"
                 href="http://www.tokni.com"
               >
                 Онлайн версія від Tokni
@@ -398,72 +402,72 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-hXRMBi iTzGWv"
+      class="sc-epnACN hPcphl"
     >
       <div
-        class="sc-epnACN eYpZlH"
+        class="sc-iQNlJl caflaG"
       >
         <div
-          class="sc-jlyJG fESPZj"
+          class="sc-gipzik cQysqs"
         >
           <a
-            class="sc-gipzik NeWeo"
+            class="sc-csuQGl kBRRyz"
             href="/"
           >
             Загальні результати
           </a>
           <a
-            class="sc-gipzik cZuRBi"
+            class="sc-csuQGl cPHOgg"
             href="/tab2"
           >
             Електро-/теплогенерація
           </a>
           <a
-            class="sc-gipzik cZuRBi"
+            class="sc-csuQGl cPHOgg"
             href="/tab3"
           >
             Кінцеве споживання
           </a>
         </div>
         <div
-          class="sc-csuQGl fNeTCM"
+          class="sc-Rmtcm hUjLYG"
         >
           <a
-            class="sc-Rmtcm eEUayA"
+            class="sc-bRBYWo bcDcex"
             href="/"
           >
             Загальні результати
           </a>
           <a
-            class="sc-Rmtcm eqpEbc"
+            class="sc-bRBYWo eFiXcE"
             href="/tab2"
           >
             Електро-/теплогенерація
           </a>
           <a
-            class="sc-Rmtcm eqpEbc"
+            class="sc-bRBYWo eFiXcE"
             href="/tab3"
           >
             Кінцеве споживання
           </a>
         </div>
         <div
-          class="sc-kjoXOD jUBxvI"
+          class="sc-cHGsZl jBJuZP"
         >
           <div
-            class="sc-bRBYWo kTiLNS"
+            class="sc-hzDkRC fPWFXZ"
           >
             <div
-              class="sc-hzDkRC iJZBvm"
+              class="sc-jhAzac flemrq"
             >
               <p
-                class="sc-jhAzac diyQlh"
+                class="sc-fBuWsC biMZeb"
               >
                 За допомогою цього інструменту ви можете ознайомитися з попередніми результатами сценаріїв розрахованих за допомогою енергетичної моделі TIMES-Україна. Виберіть сценарій у меню ліворуч та перегляньте результати на діаграмах, наведених нижче.
               </p>
             </div>
             <div
-              class="sc-fBuWsC cOfQrX"
+              class="sc-fMiknA cyBNiF"
             >
               <span
                 class="octicon octicon-x"
@@ -471,7 +475,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-cHGsZl biYRMC"
+            class="sc-TOsTZ kLcaOJ"
           >
             <div>
               <div
@@ -487,7 +491,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-caSCKo lgUxM"
+                    class="sc-gisBJw jSRKIl"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -2037,7 +2041,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-caSCKo lgUxM"
+                    class="sc-gisBJw jSRKIl"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -3867,7 +3871,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-caSCKo lgUxM"
+                    class="sc-gisBJw jSRKIl"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -4857,7 +4861,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-caSCKo lgUxM"
+                    class="sc-gisBJw jSRKIl"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -5847,7 +5851,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-caSCKo lgUxM"
+                    class="sc-gisBJw jSRKIl"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -8193,7 +8197,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-caSCKo lgUxM"
+                    class="sc-gisBJw jSRKIl"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -9743,7 +9747,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-caSCKo lgUxM"
+                    class="sc-gisBJw jSRKIl"
                     dx="0"
                     dy="4.97"
                     x="90"

@@ -20,7 +20,7 @@ const MenuLayout = styled.div`
     visibility: visible;
   `}
   `;
-  MenuLayout.displayName = 'MenuLayout';
+
 const MenuHeader =  styled.div`
   padding: 10px 12px 5px 0px;
   margin: 0;
@@ -30,7 +30,7 @@ const MenuHeader =  styled.div`
   align-items: top;
   justify-content: space-between;
   `;
-  MenuLayout.displayName = 'MenuLayout';
+
 const MenuHeaderLeft = styled.div`
   padding: 0 12px 5px 0px;
   margin: 0;
@@ -38,22 +38,41 @@ const MenuHeaderLeft = styled.div`
   display: flex;
   flex-direction: column;
   `;
-  MenuHeaderLeft.displayName = 'MenuHeaderLeft';
-const MenuHeaderRight = styled.div`
+
+  const MenuHeaderRight = styled.div`
   padding: 0 12px 5px 0px;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   `;
-  MenuHeaderRight.displayName = 'MenuHeaderRight';
+
 const AppLogo  = styled.img`
-  width: 45px;
-  height: 67px;
+  width: 54px;
+  height: 85px;
   margin-left: 20px;
   border: 0;
   `;
-  AppLogo.displayName = 'AppLogo';
+
+const ModelersLogo  = styled.img`
+  align-self: flex-start;
+  width: 80px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  margin-bottom: 20px;
+  `;
+
+const MenuPages =  styled.div`
+  padding: 0px 12px 5px 0px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: space-between;
+  `;
+
 const MenuTitle  = styled(Link)`
   font-weight: bold;
   font-size: 1.25em;
@@ -65,25 +84,25 @@ const MenuTitle  = styled(Link)`
   color: white;
   text-decoration: none;
   `;
-  MenuTitle.displayName = 'MenuTitle';
+
 const LanguageGroup = styled.div`
   display: flex;
   flex-direction: row;
   margin-left: 15px;
   margin-top: 20px;
   `;
-  LanguageGroup.displayName = 'LanguageGroup';
+
 const LanguageButton = styled.button`
   margin-right: 5px;
   `; 
-  LanguageButton.displayName='LanguageButton';
+
 const MenuSeparatorLine  = styled.hr`
   margin: 0.25em 12px 0.25em 15px;
   border-color: #555;
   border-width: 1px;
   width: 100hh;
   `;
-  MenuSeparatorLine.displayName = 'MenuSeparatorLine';
+
 const MenuRoutes  = styled.div`
   padding: 10px 12px 15px 15px;
   margin: 0;
@@ -92,7 +111,7 @@ const MenuRoutes  = styled.div`
   flex-direction: column;
   align-items: center;
   `;
-  MenuRoutes.displayName = 'MenuRoutes';
+
 const MenuItem  = styled(Link)`
   font-weight: ${props => (props.selected ? 'bold' : 'normal')};
   font-size: 0.9em;
@@ -109,25 +128,25 @@ const MenuItem  = styled(Link)`
   }
   color: ${props => (props.selected ? 'yellow' : 'inherit')};
   `;
-  MenuItem.displayName = 'MenuItem';
+
 const ScenarioSelection  = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   `;
-  ScenarioSelection.displayName = 'ScenarioSelection';
+
 const ToggleDifference = styled.div`
   padding: 15px;
   display: flex;
   justify-content:start;
   align-content:center;
   `;
-  ToggleDifference.displayName = 'ToggleDifference';
+
 const ToggleSwitchText = styled.div`
   color: ${props => (props.singleMode ? 'gray' : props.selected ? '#2196F3' : 'white')};
   margin-left: 10px;
   `;
-  ToggleSwitchText.displayName = 'ToggleSwitchText';
+
 const MenuFooter  = styled.div`
   padding: 15px 12px 5px 15px;
   margin: 0;
@@ -136,14 +155,14 @@ const MenuFooter  = styled.div`
   flex-direction: column;
   align-items: center;
   `;
-  MenuFooter.displayName = 'MenuFooter';
+
 const CopyrightNotice = styled.div`
   padding: 0 12px 5px 15px;
   margin: 0;
   width: 100%;
   heigth: 26px;
   `;
-  MenuLayout.displayName = 'MenuLayout';
+
 const ExternalLink = styled.a`
   color: white;
   text-decoration: none;
@@ -151,16 +170,6 @@ const ExternalLink = styled.a`
     text-decoration: underline;
   }
   `;
-  ExternalLink.displayName = 'ExternalLink';
-const ModelersLogo  = styled.img`
-  align-self: flex-start;
-  width: 160px;
-  border-style: solid;
-  border-width: 10px;
-  border-color: white;
-  margin-bottom: 20px;
-  `;
-ModelersLogo.displayName = 'ModelersLogo';  
 
 export class ScenarioSelectionMenu extends React.Component {
 
@@ -170,7 +179,14 @@ export class ScenarioSelectionMenu extends React.Component {
       <MenuLayout>
         <MenuHeader>
           <MenuHeaderLeft>
-            <MenuTitle to='/'>
+            <AppLogo src='./images/dtulogo_white.png' alt='logo'/>
+          </MenuHeaderLeft>
+          <MenuHeaderRight>
+            <ModelersLogo src='images/times-ukraine-modellers.gif' />
+          </MenuHeaderRight>
+        </MenuHeader>
+        <MenuPages>
+        <MenuTitle to='/'>
             <Trans i18nKey='main-menu.times-ukraine' />
             </MenuTitle>
             <LanguageGroup>
@@ -184,11 +200,7 @@ export class ScenarioSelectionMenu extends React.Component {
               <MenuItem to='/assumptions' selected={this.props.selectedChartgroup==='/assumptions'}><Trans i18nKey='main-menu.assumptions' /></MenuItem>
               <MenuItem to='/subscribe' selected={this.props.selectedChartgroup==='/subscribe'}><Trans i18nKey='main-menu.subscribe-to-updates' /></MenuItem>              
             </MenuRoutes>
-          </MenuHeaderLeft>
-          <MenuHeaderRight>
-            <AppLogo src='./images/dtulogo_white.png' alt='logo'/>
-          </MenuHeaderRight>
-        </MenuHeader>
+        </MenuPages>
         <MenuSeparatorLine />        
         <ScenarioSelection>
           <ScenarioSelectionList
@@ -214,7 +226,6 @@ export class ScenarioSelectionMenu extends React.Component {
         </ToggleDifference>
         <MenuSeparatorLine />
         <MenuFooter>
-          <ModelersLogo src='images/times-ukraine-modellers.gif' />
           <CopyrightNotice>
             <ExternalLink href='http://www.tokni.com'><Trans i18nKey='main-menu.online-version-from-tokni' /></ExternalLink>
           </CopyrightNotice>
