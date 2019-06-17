@@ -12,81 +12,89 @@ exports[`should render correctly 1`] = `
         class="sc-lhVmIH dHdcNG"
       >
         <div
-          class="sc-htoDjs bLeWKd"
+          class="sc-htoDjs jofOpB"
         >
           <div
-            class="sc-dnqmqq hYeqzG"
+            class="sc-dnqmqq eoxujR"
           >
             <div
-              class="sc-iwsKbI bLepPS"
+              class="sc-iwsKbI gjfgyx"
             >
-              <img
-                alt="logo"
-                class="sc-gqjmRU cjjHtn"
-                src="./images/dtulogo_white.png"
-              />
+              <a
+                href="http://www.sustainability.man.dtu.dk/english/research/energy-systems-analysis"
+              >
+                <img
+                  alt="logo"
+                  class="sc-gqjmRU ihjMQF"
+                  src="./images/dtulogo_white.png"
+                />
+              </a>
             </div>
             <div
-              class="sc-gZMcBi hDmUrN"
+              class="sc-gZMcBi cLEkDt"
             >
-              <img
-                class="sc-VigVT jbRUpQ"
-                src="images/times-ukraine-modellers.gif"
-              />
+              <a
+                href="http://ief.org.ua/"
+              >
+                <img
+                  class="sc-VigVT cKXyAt"
+                  src="images/times-ukraine-modellers.gif"
+                />
+              </a>
             </div>
           </div>
           <div
-            class="sc-jTzLTM jOnzbm"
+            class="sc-jTzLTM hbXWpv"
           >
             <a
-              class="sc-fjdhpX fCvQDI"
+              class="sc-fjdhpX cvoqus"
               href="/"
             >
               TIMES-Україна
             </a>
             <div
-              class="sc-jzJRlG jjwGzH"
+              class="sc-jzJRlG dbdkDt"
             >
               <button
-                class="sc-cSHVUG hxNqwi"
+                class="sc-cSHVUG hBZDWy"
               >
                 UK
               </button>
               <button
-                class="sc-cSHVUG jmaipt"
+                class="sc-cSHVUG ksVxEJ"
               >
                 EN
               </button>
             </div>
             <div
-              class="sc-chPdSV iWEgRk"
+              class="sc-chPdSV gzzYpj"
             >
               <a
-                class="sc-kgoBCf imwzZa"
+                class="sc-kgoBCf cXRmpo"
                 href="/about"
               >
                 Про інструмент
               </a>
               <a
-                class="sc-kgoBCf imwzZa"
+                class="sc-kgoBCf cXRmpo"
                 href="/descriptions"
               >
                 Опис сценаріїв
               </a>
               <a
-                class="sc-kgoBCf imwzZa"
+                class="sc-kgoBCf cXRmpo"
                 href="/recommendations"
               >
                 Висновки
               </a>
               <a
-                class="sc-kgoBCf imwzZa"
+                class="sc-kgoBCf cXRmpo"
                 href="/assumptions"
               >
                 Припущення
               </a>
               <a
-                class="sc-kgoBCf imwzZa"
+                class="sc-kgoBCf cXRmpo"
                 href="/subscribe"
               >
                 Дізнатися більше
@@ -94,10 +102,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-kAzzGY dmGVCy"
+            class="sc-kAzzGY kGLYVL"
           />
           <div
-            class="sc-kGXeez REnJV"
+            class="sc-kGXeez kXpdIW"
           >
             <div
               class="sc-bdVaJa donHvk"
@@ -173,10 +181,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-kAzzGY dmGVCy"
+            class="sc-kAzzGY kGLYVL"
           />
           <div
-            class="sc-kpOJdX jnKUCW"
+            class="sc-kpOJdX kmCMMW"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -190,22 +198,22 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-dxgOiQ caFHYq"
+              class="sc-dxgOiQ fMBcrO"
             >
               Різниця
             </div>
           </div>
           <hr
-            class="sc-kAzzGY dmGVCy"
+            class="sc-kAzzGY kGLYVL"
           />
           <div
-            class="sc-ckVGcZ fVdwwM"
+            class="sc-ckVGcZ lgqzHf"
           >
             <div
-              class="sc-jKJlTe blFZcL"
+              class="sc-jKJlTe dWEcVq"
             >
               <a
-                class="sc-eNQAEJ jwMbdz"
+                class="sc-eNQAEJ gaeQux"
                 href="http://www.tokni.com"
               >
                 Онлайн версія від Tokni
@@ -232,15 +240,15 @@ exports[`should render correctly 1`] = `
             TIMES-Україна
           </a>
           <div
-            class="sc-hSdWYo kbbpYK"
+            class="sc-hSdWYo nNlLU"
           >
             <button
-              class="sc-eHgmQL bjxCqC"
+              class="sc-eHgmQL jxaTWu"
             >
               UK
             </button>
             <button
-              class="sc-eHgmQL bjxCqC"
+              class="sc-eHgmQL jxaTWu"
             >
               EN
             </button>
