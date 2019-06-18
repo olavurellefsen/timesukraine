@@ -19,7 +19,7 @@ injectGlobal`
     height: 100%
   }
   body, #root, #root>div {
-    font-family: Roboto;
+    font-family: Roboto Slab;
     font-size: 1em;
     margin: 0px;
     width: 100%;
