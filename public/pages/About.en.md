@@ -1,5 +1,9 @@
 ﻿# About
-TIMES-Ukraine is a linear optimisation energy system model, belonging to the MARKAL/TIMES model family [^8],[^9], which provides a technology-rich representation of the energy system (bottom-up framework) for the estimation of the energy dynamics in the long-run [^6]. The Ukrainian energy system is divided into seven sectors in the model (Figure below). As such, the structure of the TIMES-Ukraine model complies with methodological approach of the State Statistics Service of Ukraine [^10] (harmonized with Eurostat and IEA methodology) on energy statistics, with more than 1.6 thousand technologies currently represented.
+TIMES-Ukraine is a linear optimisation energy system model, belonging to the MARKAL/TIMES model family [^8]
+[^9]
+, which provides a technology-rich representation of the energy system (bottom-up framework) for the estimation of the energy dynamics in the long-run [^6]
+. The Ukrainian energy system is divided into seven sectors in the model (Figure below). As such, the structure of the TIMES-Ukraine model complies with methodological approach of the State Statistics Service of Ukraine [^10]
+ (harmonized with Eurostat and IEA methodology) on energy statistics, with more than 1.6 thousand technologies currently represented.
 
 ![Figure: Representation of the energy system in TIMES-Ukraine model](images/model_structure_en.png "Representation of the energy system in TIMES-Ukraine model")
 
@@ -15,17 +19,28 @@ The agriculture sector is divided into crop production, cattle breeding, local t
 
 Energy system models, like TIMES-Ukraine, are usually applied for long-term analysis of energy system development pathways. By changing the assumptions on useful energy demands, technologies, prices or other exogenous variables, scenarios can be analysed. As a first step, scenarios without measures (baseline scenario) are developed. In the next step, policy scenarios are designed by imposing additional constraints or targets on the energy system as to assess the effect of different policies. The result of the modelling is an assessment of the least-cost solutions for the entire energy system under given conditions and restrictions.
 
-The TIMES-Ukraine model satisfies the methodological recommendations of international organizations for the development of energy and environmental forecasts. In particular, the recommendations of the Secretariat of the United Nations Framework Convention on Climate Change concerning the development of national communications [^11]. 
+The TIMES-Ukraine model satisfies the methodological recommendations of international organizations for the development of energy and environmental forecasts. In particular, the recommendations of the Secretariat of the United Nations Framework Convention on Climate Change concerning the development of national communications [^11] 
 
 Based on the previous applications, TIMES-Ukraine model is particularly suited to perform the following tasks:
-- estimation of the optimal technological structure of the power system under the criterion of minimisation of the total discounted system cost [^12],[^13],[^14],[^15]
-- analysis of the structure of energy, material and financial flows in the system, taking into account resources trade [^16],[^17],[^18]
-- assessment of the potential of energy savings, renewable energy sources, new types of energy and fuels, and investment prioritisation based on a least-cost optimisation [^19],[^20],[^21],[^22]
-- forecasting the dynamics of greenhouse gas emissions [^23],[^24],[^25]
-- identification of possible threats to the energy supply of the country and determination of measures for their prevention [^26],[^27],[^28]
+- estimation of the optimal technological structure of the power system under the criterion of minimisation of the total discounted system cost [^12]
+[^13]
+[^14]
+[^15]
+- analysis of the structure of energy, material and financial flows in the system, taking into account resources trade [^16]
+[^17]
+[^18]
+- assessment of the potential of energy savings, renewable energy sources, new types of energy and fuels, and investment prioritisation based on a least-cost optimisation [^19]
+[^20]
+[^21]
+[^22]
+- forecasting the dynamics of greenhouse gas emissions [^23]
+[^24]
+[^25]
+- identification of possible threats to the energy supply of the country and determination of measures for their prevention [^26]
+[^27]
+[^28]
 - assessment of the impact of energy, economic, environmental, climate, industrial, agriculture, transport, innovation and other policies on energy development [^29]
 - investigation of the advantages and risks of integration processes and international obligations in the energy, ecological, climate and other spheres [^30]
-
 
 
 [^6]: Podolets RZ, Diachuk OA. Strategic Planning in Fuel and Energy Complex Based on TIMES-Ukraine Model: Scientific Report. Kyiv: 2011.

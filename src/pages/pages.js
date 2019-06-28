@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import breakpoint from "styled-components-breakpoint";
 import { Trans, withNamespaces } from "react-i18next";
-import ReactMarkdown from "react-markdown";
+import Markdown from "markdown-to-jsx";
 
 const AboutContainer = styled.div`
   padding: 0px 20px 20px 20px;
@@ -27,7 +27,7 @@ const AboutBody = styled.p`
 class ScenarioDescriptions extends Component {
   constructor(props) {
     super(props);
-    this.state = { terms: null };
+    this.state = { terms: '' };
   }
 
   updateLanguage = () => {
@@ -50,7 +50,7 @@ class ScenarioDescriptions extends Component {
   render() {
     return (
       <AboutContainer>
-        <ReactMarkdown source={this.state.terms} />
+        <Markdown>{this.state.terms}</Markdown>
         <AboutBody>
           <Link to="/">
             <Trans i18nKey="pages.to-the-front-page" />
