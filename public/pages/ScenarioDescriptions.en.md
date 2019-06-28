@@ -1,11 +1,21 @@
-# Scenario Descriptions
+﻿# Scenario Descriptions
 
-**_Reference_**  scenario considers the optimal development of the energy system of Ukraine under the goals of ESU2035. It is based on the targets specified in the strategy, including:
-* Energy efficiency of GDP; 
-* Renewable share of TPES; 
-* Minimum renewable share of electricity;
-* Addition of 1GW nuclear power in 2025.
+Within the framework of this project, four scenarios (_Frozen Policy scenario_, _Reference scenario_, _National Strategy scenario_, _Low Carbon Society scenario_) and a set of sensitivity scenarios designed as variations on the Reference scenario have been developed. The Matrix of the modelling scenarios is shown  in Table 1.
 
-A few sensitivity scenarios assess possible deviations from the targets or influence of alternative sets of technologies. **_Low Renewable Growth_** scenario assumes future low development of renewable energy as in UkrEnergo’s development pathways for hydro, wind and solar power generation. **_No New Nuclear in 2025_** analyses the effects of a delay until at least 2030 of the new nuclear power generation capacity. In the scenario **_New Balancing Techs_**, new technologies that can provide balancing under increasing share of renewable generation are considered; while **_Green-Coal Paradox_** focuses on the effects of refurbishment of the existing coal-based thermal units to extend their lifetime and use them for balancing instead. **_Optimise Balancing_** provides insights into the effects a forecasting system (and a reduced balancing requirement) could have. 
+Table 1. The Matrix of Scenarios
 
-Additional scenarios put the goals of ESU2035 into a wider context (both national and international). **_National Strategies_** adds other national targets and measures from strategic documents (National transport strategy of Ukraine till 2030; National Strategy for Waste Management in Ukraine till 2030; Concept of realization of the state policy of heat supply; and Ukraine 2050 Low Emission Development Strategy) in addition to ESU2035. **_Low Carbon Society_** further expands the previous scenario by considering a path to an 80% GHG emission reduction for Ukraine in 2050. This scenario is closer to the climate mitigation policy adopted in the EU. **_Frozen Policy_** takes into account only those policies, measures and targets that were adopted until 2015 (i.e. no policies, measures and targets from ESU2035 and other strategic documents) and is provided for comparison purposes.
+![Table: The Matrix of Scenarios](images/scen_main_en.png "The Matrix of Scenarios")
+
+**_Frozen Policy scenario_** – assumes no changes in energy policy after 2015 (i.e. before adoption of the ESU2035). This scenario was made for comparison purposes.
+
+**_Reference scenario_** – defined based on the main objectives and indicators of the Energy Strategy of Ukraine till 2035: reduction of the energy intensity of GDP; growth in the share of renewables in TPES; electricity generation structure, that preserves the dominant role of nuclear power as well as building unit #3 at Khmelnytska Nuclear Power Plant (KhNPP); and achieving European environmental requirements of the operation of large combustion plants. The same goals and restrictions are used for the period 2036-2050 (i.e. after ESU2035) as in 2035.
+
+**_Sensitivity scenarios_** – are based on the Reference scenario and differ only in one of the constraints or conditions. In particular, opportunities to use new balancing capacity, availability of quality power generation forecasting system for Solar and Wind, or delayed construction of KhNPP unit #3 or renewable energy (according to the terms of the scenario presented in the Report on conformity assessment (adequacy) generating capacities (SE "NEC "Ukrenergo"). This group of scenarios was especially directed towards the needs of the Ministry of Energy and Coal Industry. The Matrix of the Sensitivity scenarios is presented in Table 2.
+
+Table 2. The Matrix of the Sensitivity scenarios
+
+![Table: The Matrix of the Sensitivity scenarios](images/scen_sens_en.png "The Matrix of the Sensitivity scenarios")
+
+**_National Strategies scenario_** – includes targets from other national strategies and plans in addition to the conditions and constraints of the Reference Scenario, including Low Emission Development Strategies in Ukraine till 2050, the National Transport Strategy till 2030, Concept of state policy in the field of heating supply and others.
+
+**_Low-Carbon Society scenario_** – aims at reducing the greenhouse gas emissions by 80% in 2050 with respect to 1990 levels. This scenario is closer to the climate mitigation policy adopted in the EU.
