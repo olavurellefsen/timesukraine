@@ -66,8 +66,7 @@
     "tab6": "Tab6"
   },
   "welcome-text": {
-    "welcome": "With this tool you can explore a number of scenarios related to the TIMES Ukraine energy model. Select a scenario in the left hand menu and review the results in the charts below.",
-    "disclaimer": "The information and results hereby represented are work-in-progress results of “Long-Term Energy Modelling and Forecasting in Ukraine: Scenarios for the Action Plan of Energy Strategy of Ukraine until 2035”, joint project by the MoECI of Ukraine, UDEC and the Danish Energy Agency. The data and results are preliminary, and should not be cited or distributed."
+    "welcome": "With this tool you can explore scenarios developed in “Long-Term Energy Modelling and Forecasting in Ukraine: Scenarios for the Action Plan of Energy Strategy of Ukraine until 2035”, joint project by the MoECI of Ukraine, UDEC and the Danish Energy Agency. Select a scenario in the left-hand menu and review the results in the charts below."
   },
   "pages": {
     "to-the-front-page": "To the front page"

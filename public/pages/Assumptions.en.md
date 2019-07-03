@@ -25,7 +25,7 @@ Table 1. Average annual growth rates of Ukraine's GDP for the period 2018-2050
 | Services                                               |      2.8% |      3.5% |      4.3% |      3.9% |      4.0% |      4.0% |      4.0% |
 | GDP                                                    |      3.0% |      3.4% |      4.4% |      4.0% |      4.0% |      4.0% |      4.0% |
 
-The forecast of prices for the main energy resources for Ukraine until 2050 is based on World Bank forecasts to 2030 [^37] (see Table 2). By extrapolating data, a corresponding forecast for 2035-2050 prices was made.
+The forecast of prices for the main energy resources for Ukraine until 2050 is based on World Bank forecasts to 2030 [^2] (see Table 2). By extrapolating data, a corresponding forecast for 2035-2050 prices was made.
 
 Table 2. Commodity prices forecasts in nominal U.S. dollars
 
@@ -81,6 +81,8 @@ Table 4. Capital cost of future energy technologies for Ukraine (EUR/kW)
 | Large Hydro                                                        | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 |
 | Battery Storages (EUR/kWh)                                         | 900  | 875  | 850  | 800  | 750  | 700  | 600  |
 
+<br/><br/>
+
 [^1]: Excluding the territories temporarily occupied by Russian Federation.
 
-[^37]: World Bank. Commodity Markets Outlook n.d. http://www.worldbank.org/en/research/commodity-markets (accessed October 15, 2018).
+[^2]: World Bank. Commodity Markets Outlook n.d. http://www.worldbank.org/en/research/commodity-markets (accessed October 15, 2018).
