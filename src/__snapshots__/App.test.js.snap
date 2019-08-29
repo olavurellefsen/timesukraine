@@ -3,13 +3,13 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="sc-cmTdod izRjhK"
+    class="sc-jwKygS cvQHBK"
   >
     <div
-      class="sc-jwKygS kpakFr"
+      class="sc-btzYZH kmtNsf"
     >
       <div
-        class="sc-lhVmIH dHdcNG"
+        class="sc-bYSBpT iwiueF"
       >
         <div
           class="sc-htoDjs jofOpB"
@@ -410,10 +410,10 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-btzYZH leMept"
+      class="sc-lhVmIH hDgpTM"
     >
       <div
-        class="sc-lhVmIH dHdcNG"
+        class="sc-bYSBpT iwiueF"
       >
         <div
           class="sc-gipzik cQysqs"
@@ -471,7 +471,7 @@ exports[`should render correctly 1`] = `
               <p
                 class="sc-fBuWsC biMZeb"
               >
-                За допомогою цього інструменту ви можете ознайомитися з попередніми результатами сценаріїв розрахованих за допомогою енергетичної моделі TIMES-Україна. Виберіть сценарій у меню ліворуч та перегляньте результати на діаграмах, наведених нижче.
+                За допомогою цього інструменту ви можете ознайомитися з результатами спільного проекту МЕВПУ, УДЕЦ та ДЕА: “Довгострокове енергетичне моделювання та прогнозування в Україні: сценарії для плану дій реалізації Енергетичної стратегії України на період до 2035 року”. Виберіть сценарій у меню ліворуч та перегляньте результати на діаграмах, наведених нижче.
               </p>
             </div>
             <div
