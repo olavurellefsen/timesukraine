@@ -23,6 +23,33 @@ const AboutBody = styled.p`
     font-size: 0.7em;
   `}
 `;
+const MarkDownContent = styled.div`
+ table th, table td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5
+  }
+
+  table tr {
+      background-color: #fff;
+      border-top: 1px solid #c6cbd1
+  }
+
+  table tr:nth-child(2n) {
+      background-color: #f6f8fa
+  }
+  table {
+      display: block;
+      width: 100%;
+      overflow: auto
+      border-collapse: collapse;
+  }
+
+  table th {
+      font-weight: 600
+  }
+`;
+
+
 
 class ScenarioDescriptions extends Component {
   constructor(props) {
@@ -50,7 +77,9 @@ class ScenarioDescriptions extends Component {
   render() {
     return (
       <AboutContainer>
+      <MarkDownContent>
         <Markdown>{this.state.terms}</Markdown>
+        </MarkDownContent>
         <AboutBody>
           <Link to="/">
             <Trans i18nKey="pages.to-the-front-page" />
