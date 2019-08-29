@@ -10,7 +10,7 @@
     "react-dom": "^16.8.6",
     "react-ga": "^2.5.0",
     "react-i18next": "^8.3.8",
-    "react-markdown": "^4.1.0",
+    "markdown-to-jsx": "^6.10.2",
     "react-octicon": "^3.0.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^3.0.1",

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import breakpoint from "styled-components-breakpoint";
 import { Trans, withNamespaces } from "react-i18next";
-import Markdown from "react-markdown";
+import Markdown from "markdown-to-jsx";
 
 const AboutContainer = styled.div`
   padding: 0px 20px 20px 20px;
