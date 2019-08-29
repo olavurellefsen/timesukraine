@@ -21,7 +21,7 @@ Deployment version:
 
 - npm run build
 
-The public version is available at https://timesukraine.tokni.com and is updated via Netlify after each commit to the master branch. A staging version is available at http://staging--timesukraine.netlify.com/
+The public version is available at https://timesukraine.tokni.com and is updated via Netlify after each commit to the master branch. A staging version is available at http://develop--timesukraine.netlify.com/
 
 ## Usage
 
