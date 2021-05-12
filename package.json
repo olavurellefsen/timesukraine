@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "i18next": "^12.1.0",
-    "merge": "^1.2.1",
+    "merge": "^2.1.1",
     "prop-types": "^15.6.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
